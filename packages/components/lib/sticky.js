@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 214);
+/******/ 	return __webpack_require__(__webpack_require__.s = 213);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -203,14 +203,14 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 214:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/sticky/src/sticky.vue?vue&type=template&id=4faece5e&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/sticky/src/sticky.vue?vue&type=template&id=4faece5e&
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -243,7 +243,7 @@ render._withStripped = true
 
 // CONCATENATED MODULE: ./src/sticky/src/sticky.vue?vue&type=template&id=4faece5e&
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/sticky/src/sticky.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/sticky/src/sticky.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -264,7 +264,7 @@ render._withStripped = true
 //
 //
 /* harmony default export */ var stickyvue_type_script_lang_js_ = ({
-  name: 'SSticky',
+  name: "SSticky",
   props: {
     stickyTop: {
       type: Number,
@@ -276,12 +276,12 @@ render._withStripped = true
     },
     className: {
       type: String,
-      default: ''
+      default: ""
     },
     // 滚动的容器，空则默认为 window
     appendTo: {
       type: String,
-      default: ''
+      default: ""
     }
   },
 
@@ -289,7 +289,7 @@ render._withStripped = true
     this.appendToEl = window;
     return {
       active: false,
-      position: '',
+      position: "",
       width: undefined,
       height: undefined,
       isSticky: false
@@ -297,14 +297,15 @@ render._withStripped = true
   },
 
   mounted() {
+    console.log(7777);
     this.height = this.$el.getBoundingClientRect().height;
 
     if (this.appendTo) {
       this.appendToEl = document.querySelector(this.appendTo);
     }
 
-    this.appendToEl.addEventListener('scroll', this.handleScroll);
-    window.addEventListener('resize', this.handleResize);
+    this.appendToEl.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.handleResize);
   },
 
   activated() {
@@ -312,8 +313,8 @@ render._withStripped = true
   },
 
   destroyed() {
-    this.appendToEl.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener('resize', this.handleResize);
+    this.appendToEl.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.handleResize);
   },
 
   methods: {
@@ -322,9 +323,9 @@ render._withStripped = true
         return;
       }
 
-      this.position = 'fixed';
+      this.position = "fixed";
       this.active = true;
-      this.width = this.width + 'px';
+      this.width = this.width + "px";
       this.isSticky = true;
     },
 
@@ -337,15 +338,15 @@ render._withStripped = true
     },
 
     reset() {
-      this.position = '';
-      this.width = 'auto';
+      this.position = "";
+      this.width = "auto";
       this.active = false;
       this.isSticky = false;
     },
 
     handleScroll() {
       const width = this.$el.getBoundingClientRect().width;
-      this.width = width || 'auto';
+      this.width = width || "auto";
       const offsetTop = this.$el.getBoundingClientRect().top;
 
       if (offsetTop < this.stickyTop) {
@@ -358,7 +359,7 @@ render._withStripped = true
 
     handleResize() {
       if (this.isSticky) {
-        this.width = this.$el.getBoundingClientRect().width + 'px';
+        this.width = this.$el.getBoundingClientRect().width + "px";
       }
     }
 
@@ -366,7 +367,7 @@ render._withStripped = true
 });
 // CONCATENATED MODULE: ./src/sticky/src/sticky.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_stickyvue_type_script_lang_js_ = (stickyvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./src/sticky/src/sticky.vue

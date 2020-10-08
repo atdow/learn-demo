@@ -1,3 +1,13 @@
 {
-  "ellipsis": "./src/ellipsis/index.js"
+  "json-editor": "./src/json-editor/index.js",
+  "json-schema-editor": "./src/json-schema-editor/index.js",
+  "brush-timeline": "./src/brush-timeline/index.js",
+  "overview-timeline": "./src/overview-timeline/index.js",
+  "query-tags": "./src/query-tags/index.js",
+  "count-down": "./src/count-down/index.js",
+  "result": "./src/result/index.js",
+  "ellipsis": "./src/ellipsis/index.js",
+  "number-info": "./src/number-info/index.js",
+  "sticky": "./src/sticky/index.js",
+  "backto-top": "./src/backto-top/index.js"
 }

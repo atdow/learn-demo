@@ -91,57 +91,16 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 211);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/ellipsis/src/ellipsis.vue?vue&type=template&id=3f5b5211&scoped=true&
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "ellipsis" }, [_vm._v("ellipsis")])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-// CONCATENATED MODULE: ./src/ellipsis/src/ellipsis.vue?vue&type=template&id=3f5b5211&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/ellipsis/src/ellipsis.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-/* harmony default export */ var ellipsisvue_type_script_lang_js_ = ({
-  name: "ellipsis",
-  props: {},
-
-  data() {
-    return {};
-  },
-
-  components: {},
-  watch: {},
-  computed: {},
-
-  created() {},
-
-  mounted() {},
-
-  beforeDestroy() {}
-
-});
-// CONCATENATED MODULE: ./src/ellipsis/src/ellipsis.vue?vue&type=script&lang=js&
- /* harmony default export */ var src_ellipsisvue_type_script_lang_js_ = (ellipsisvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return normalizeComponent; });
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -241,6 +200,58 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+
+/***/ 211:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/ellipsis/src/ellipsis.vue?vue&type=template&id=3f5b5211&scoped=true&
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "ellipsis" }, [_vm._v("ellipsis")])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+// CONCATENATED MODULE: ./src/ellipsis/src/ellipsis.vue?vue&type=template&id=3f5b5211&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/ellipsis/src/ellipsis.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+/* harmony default export */ var ellipsisvue_type_script_lang_js_ = ({
+  name: "ellipsis",
+  props: {},
+
+  data() {
+    return {};
+  },
+
+  components: {},
+  watch: {},
+  computed: {},
+
+  created() {},
+
+  mounted() {},
+
+  beforeDestroy() {}
+
+});
+// CONCATENATED MODULE: ./src/ellipsis/src/ellipsis.vue?vue&type=script&lang=js&
+ /* harmony default export */ var src_ellipsisvue_type_script_lang_js_ = (ellipsisvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(0);
+
 // CONCATENATED MODULE: ./src/ellipsis/src/ellipsis.vue
 
 
@@ -249,7 +260,7 @@ function normalizeComponent (
 
 /* normalize component */
 
-var component = normalizeComponent(
+var component = Object(componentNormalizer["a" /* default */])(
   src_ellipsisvue_type_script_lang_js_,
   render,
   staticRenderFns,
@@ -269,5 +280,6 @@ component.options.__file = "src/ellipsis/src/ellipsis.vue"
 /* harmony default export */ var src_ellipsis = __webpack_exports__["default"] = (ellipsis);
 
 /***/ })
-/******/ ]);
+
+/******/ });
 });

@@ -481,7 +481,7 @@ function applyToTag(style, options, obj) {
     style.removeAttribute('media');
   }
 
-  if (sourceMap && btoa) {
+  if (sourceMap && typeof btoa !== 'undefined') {
     css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
   } // For old IE
 
@@ -2422,7 +2422,7 @@ module.exports = function (list, options) {
       }
     }
     builder.trailingSpace = displayText.charCodeAt(text.length - 1) == 32;
-    if (style || startStyle || endStyle || mustWrap || css) {
+    if (style || startStyle || endStyle || mustWrap || css || attributes) {
       var fullStyle = style || "";
       if (startStyle) { fullStyle += startStyle; }
       if (endStyle) { fullStyle += endStyle; }
@@ -3857,8 +3857,10 @@ module.exports = function (list, options) {
     var on = true;
     display.cursorDiv.style.visibility = "";
     if (cm.options.cursorBlinkRate > 0)
-      { display.blinker = setInterval(function () { return display.cursorDiv.style.visibility = (on = !on) ? "" : "hidden"; },
-        cm.options.cursorBlinkRate); }
+      { display.blinker = setInterval(function () {
+        if (!cm.hasFocus()) { onBlur(cm); }
+        display.cursorDiv.style.visibility = (on = !on) ? "" : "hidden";
+      }, cm.options.cursorBlinkRate); }
     else if (cm.options.cursorBlinkRate < 0)
       { display.cursorDiv.style.visibility = "hidden"; }
   }
@@ -7222,7 +7224,7 @@ module.exports = function (list, options) {
     46: "Delete", 59: ";", 61: "=", 91: "Mod", 92: "Mod", 93: "Mod",
     106: "*", 107: "=", 109: "-", 110: ".", 111: "/", 145: "ScrollLock",
     173: "-", 186: ";", 187: "=", 188: ",", 189: "-", 190: ".", 191: "/", 192: "`", 219: "[", 220: "\\",
-    221: "]", 222: "'", 63232: "Up", 63233: "Down", 63234: "Left", 63235: "Right", 63272: "Delete",
+    221: "]", 222: "'", 224: "Mod", 63232: "Up", 63233: "Down", 63234: "Left", 63235: "Right", 63272: "Delete",
     63273: "Home", 63275: "End", 63276: "PageUp", 63277: "PageDown", 63302: "Insert"
   };
 
@@ -7357,7 +7359,7 @@ module.exports = function (list, options) {
     var base = name;
     if (event.altKey && base != "Alt") { name = "Alt-" + name; }
     if ((flipCtrlCmd ? event.metaKey : event.ctrlKey) && base != "Ctrl") { name = "Ctrl-" + name; }
-    if ((flipCtrlCmd ? event.ctrlKey : event.metaKey) && base != "Cmd") { name = "Cmd-" + name; }
+    if ((flipCtrlCmd ? event.ctrlKey : event.metaKey) && base != "Mod") { name = "Cmd-" + name; }
     if (!noShift && event.shiftKey && base != "Shift") { name = "Shift-" + name; }
     return name
   }
@@ -7583,7 +7585,7 @@ module.exports = function (list, options) {
     goGroupRight: function (cm) { return cm.moveH(1, "group"); },
     goGroupLeft: function (cm) { return cm.moveH(-1, "group"); },
     goWordRight: function (cm) { return cm.moveH(1, "word"); },
-    delCharBefore: function (cm) { return cm.deleteH(-1, "char"); },
+    delCharBefore: function (cm) { return cm.deleteH(-1, "codepoint"); },
     delCharAfter: function (cm) { return cm.deleteH(1, "char"); },
     delWordBefore: function (cm) { return cm.deleteH(-1, "word"); },
     delWordAfter: function (cm) { return cm.deleteH(1, "word"); },
@@ -8458,7 +8460,9 @@ module.exports = function (list, options) {
     attachDoc(this, doc);
 
     if ((options.autofocus && !mobile) || this.hasFocus())
-      { setTimeout(bind(onFocus, this), 20); }
+      { setTimeout(function () {
+        if (this$1.hasFocus() && !this$1.state.focused) { onFocus(this$1); }
+      }, 20); }
     else
       { onBlur(this); }
 
@@ -9221,14 +9225,14 @@ module.exports = function (list, options) {
   }
 
   // Used for horizontal relative motion. Dir is -1 or 1 (left or
-  // right), unit can be "char", "column" (like char, but doesn't
-  // cross line boundaries), "word" (across next word), or "group" (to
-  // the start of next group of word or non-word-non-whitespace
-  // chars). The visually param controls whether, in right-to-left
-  // text, direction 1 means to move towards the next index in the
-  // string, or towards the character to the right of the current
-  // position. The resulting position will have a hitSide=true
-  // property if it reached the end of the document.
+  // right), unit can be "codepoint", "char", "column" (like char, but
+  // doesn't cross line boundaries), "word" (across next word), or
+  // "group" (to the start of next group of word or
+  // non-word-non-whitespace chars). The visually param controls
+  // whether, in right-to-left text, direction 1 means to move towards
+  // the next index in the string, or towards the character to the right
+  // of the current position. The resulting position will have a
+  // hitSide=true property if it reached the end of the document.
   function findPosH(doc, pos, dir, unit, visually) {
     var oldPos = pos;
     var origDir = dir;
@@ -9242,7 +9246,12 @@ module.exports = function (list, options) {
     }
     function moveOnce(boundToLine) {
       var next;
-      if (visually) {
+      if (unit == "codepoint") {
+        var ch = lineObj.text.charCodeAt(pos.ch + (unit > 0 ? 0 : -1));
+        if (isNaN(ch)) { next = null; }
+        else { next = new Pos(pos.line, Math.max(0, Math.min(lineObj.text.length, pos.ch + dir * (ch >= 0xD800 && ch < 0xDC00 ? 2 : 1))),
+                            -dir); }
+      } else if (visually) {
         next = moveVisually(doc.cm, lineObj, pos, dir);
       } else {
         next = moveLogically(lineObj, pos, dir);
@@ -9258,7 +9267,7 @@ module.exports = function (list, options) {
       return true
     }
 
-    if (unit == "char") {
+    if (unit == "char" || unit == "codepoint") {
       moveOnce();
     } else if (unit == "column") {
       moveOnce(true);
@@ -10202,6 +10211,7 @@ module.exports = function (list, options) {
   TextareaInput.prototype.readOnlyChanged = function (val) {
     if (!val) { this.reset(); }
     this.textarea.disabled = val == "nocursor";
+    this.textarea.readOnly = !!val;
   };
 
   TextareaInput.prototype.setUneditable = function () {};
@@ -10352,7 +10362,7 @@ module.exports = function (list, options) {
 
   addLegacyProps(CodeMirror);
 
-  CodeMirror.version = "5.56.0";
+  CodeMirror.version = "5.58.1";
 
   return CodeMirror;
 
@@ -10420,7 +10430,7 @@ module.exports = content.locals || {};
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/json-editor/src/json-editor.vue?vue&type=template&id=09ebc5e1&scoped=true&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/json-editor/src/json-editor.vue?vue&type=template&id=09ebc5e1&scoped=true&
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -10435,32 +10445,32 @@ render._withStripped = true
 
 // CONCATENATED MODULE: ./src/json-editor/src/json-editor.vue?vue&type=template&id=09ebc5e1&scoped=true&
 
-// EXTERNAL MODULE: ./node_modules/codemirror/lib/codemirror.js
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/lib/codemirror.js
 var codemirror = __webpack_require__(4);
 var codemirror_default = /*#__PURE__*/__webpack_require__.n(codemirror);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/addon/lint/lint.css
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/addon/lint/lint.css
 var lint = __webpack_require__(43);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/lib/codemirror.css
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/lib/codemirror.css
 var lib_codemirror = __webpack_require__(45);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/theme/idea.css
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/theme/idea.css
 var idea = __webpack_require__(47);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/theme/rubyblue.css
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/theme/rubyblue.css
 var rubyblue = __webpack_require__(49);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/mode/javascript/javascript.js
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/mode/javascript/javascript.js
 var javascript = __webpack_require__(54);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/addon/lint/lint.js
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/addon/lint/lint.js
 var lint_lint = __webpack_require__(55);
 
-// EXTERNAL MODULE: ./node_modules/codemirror/addon/lint/json-lint.js
+// EXTERNAL MODULE: ./node_modules/_codemirror@5.58.1@codemirror/addon/lint/json-lint.js
 var json_lint = __webpack_require__(56);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/json-editor/src/json-editor.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/json-editor/src/json-editor.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -10546,7 +10556,7 @@ __webpack_require__(51);
 // EXTERNAL MODULE: ./src/json-editor/src/json-editor.vue?vue&type=style&index=0&id=09ebc5e1&scoped=true&lang=css&
 var json_editorvue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css_ = __webpack_require__(57);
 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./src/json-editor/src/json-editor.vue
@@ -10620,13 +10630,13 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* The lint marker gutter */\n.CodeMirror-lint-markers {\n  width: 16px;\n}\n\n.CodeMirror-lint-tooltip {\n  background-color: #ffd;\n  border: 1px solid black;\n  border-radius: 4px 4px 4px 4px;\n  color: black;\n  font-family: monospace;\n  font-size: 10pt;\n  overflow: hidden;\n  padding: 2px 5px;\n  position: fixed;\n  white-space: pre;\n  white-space: pre-wrap;\n  z-index: 100;\n  max-width: 600px;\n  opacity: 0;\n  transition: opacity .4s;\n  -moz-transition: opacity .4s;\n  -webkit-transition: opacity .4s;\n  -o-transition: opacity .4s;\n  -ms-transition: opacity .4s;\n}\n\n.CodeMirror-lint-mark-error, .CodeMirror-lint-mark-warning {\n  background-position: left bottom;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-lint-mark-error {\n  background-image:\n  url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg==\")\n  ;\n}\n\n.CodeMirror-lint-mark-warning {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJFhQXEbhTg7YAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAMklEQVQI12NkgIIvJ3QXMjAwdDN+OaEbysDA4MPAwNDNwMCwiOHLCd1zX07o6kBVGQEAKBANtobskNMAAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-marker-error, .CodeMirror-lint-marker-warning {\n  background-position: center center;\n  background-repeat: no-repeat;\n  cursor: pointer;\n  display: inline-block;\n  height: 16px;\n  width: 16px;\n  vertical-align: middle;\n  position: relative;\n}\n\n.CodeMirror-lint-message-error, .CodeMirror-lint-message-warning {\n  padding-left: 18px;\n  background-position: top left;\n  background-repeat: no-repeat;\n}\n\n.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-marker-multiple {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC\");\n  background-repeat: no-repeat;\n  background-position: right bottom;\n  width: 100%; height: 100%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "/* The lint marker gutter */\n.CodeMirror-lint-markers {\n  width: 16px;\n}\n\n.CodeMirror-lint-tooltip {\n  background-color: #ffd;\n  border: 1px solid black;\n  border-radius: 4px 4px 4px 4px;\n  color: black;\n  font-family: monospace;\n  font-size: 10pt;\n  overflow: hidden;\n  padding: 2px 5px;\n  position: fixed;\n  white-space: pre;\n  white-space: pre-wrap;\n  z-index: 100;\n  max-width: 600px;\n  opacity: 0;\n  transition: opacity .4s;\n  -moz-transition: opacity .4s;\n  -webkit-transition: opacity .4s;\n  -o-transition: opacity .4s;\n  -ms-transition: opacity .4s;\n}\n\n.CodeMirror-lint-mark {\n  background-position: left bottom;\n  background-repeat: repeat-x;\n}\n\n.CodeMirror-lint-mark-warning {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJFhQXEbhTg7YAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAMklEQVQI12NkgIIvJ3QXMjAwdDN+OaEbysDA4MPAwNDNwMCwiOHLCd1zX07o6kBVGQEAKBANtobskNMAAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-mark-error {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sJDw4cOCW1/KIAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAHElEQVQI12NggIL/DAz/GdA5/xkY/qPKMDAwAADLZwf5rvm+LQAAAABJRU5ErkJggg==\");\n}\n\n.CodeMirror-lint-marker {\n  background-position: center center;\n  background-repeat: no-repeat;\n  cursor: pointer;\n  display: inline-block;\n  height: 16px;\n  width: 16px;\n  vertical-align: middle;\n  position: relative;\n}\n\n.CodeMirror-lint-message {\n  padding-left: 18px;\n  background-position: top left;\n  background-repeat: no-repeat;\n}\n\n.CodeMirror-lint-marker-warning, .CodeMirror-lint-message-warning {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAANlBMVEX/uwDvrwD/uwD/uwD/uwD/uwD/uwD/uwD/uwD6twD/uwAAAADurwD2tQD7uAD+ugAAAAD/uwDhmeTRAAAADHRSTlMJ8mN1EYcbmiixgACm7WbuAAAAVklEQVR42n3PUQqAIBBFUU1LLc3u/jdbOJoW1P08DA9Gba8+YWJ6gNJoNYIBzAA2chBth5kLmG9YUoG0NHAUwFXwO9LuBQL1giCQb8gC9Oro2vp5rncCIY8L8uEx5ZkAAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-marker-error, .CodeMirror-lint-message-error {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEW7AAC7AACxAAC7AAC7AAAAAAC4AAC5AAD///+7AAAUdclpAAAABnRSTlMXnORSiwCK0ZKSAAAATUlEQVR42mWPOQ7AQAgDuQLx/z8csYRmPRIFIwRGnosRrpamvkKi0FTIiMASR3hhKW+hAN6/tIWhu9PDWiTGNEkTtIOucA5Oyr9ckPgAWm0GPBog6v4AAAAASUVORK5CYII=\");\n}\n\n.CodeMirror-lint-marker-multiple {\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAACVBMVEUAAAAAAAC/v7914kyHAAAAAXRSTlMAQObYZgAAACNJREFUeNo1ioEJAAAIwmz/H90iFFSGJgFMe3gaLZ0od+9/AQZ0ADosbYraAAAAAElFTkSuQmCC\");\n  background-repeat: no-repeat;\n  background-position: right bottom;\n  width: 100%; height: 100%;\n}\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -10661,13 +10671,13 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, borders, and global font properties here */\n  font-family: monospace;\n  height: 300px;\n  color: black;\n  direction: ltr;\n}\n\n/* PADDING */\n\n.CodeMirror-lines {\n  padding: 4px 0; /* Vertical padding around content */\n}\n.CodeMirror pre.CodeMirror-line,\n.CodeMirror pre.CodeMirror-line-like {\n  padding: 0 4px; /* Horizontal padding of content */\n}\n\n.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  background-color: white; /* The little square between H and V scrollbars */\n}\n\n/* GUTTER */\n\n.CodeMirror-gutters {\n  border-right: 1px solid #ddd;\n  background-color: #f7f7f7;\n  white-space: nowrap;\n}\n.CodeMirror-linenumbers {}\n.CodeMirror-linenumber {\n  padding: 0 3px 0 5px;\n  min-width: 20px;\n  text-align: right;\n  color: #999;\n  white-space: nowrap;\n}\n\n.CodeMirror-guttermarker { color: black; }\n.CodeMirror-guttermarker-subtle { color: #999; }\n\n/* CURSOR */\n\n.CodeMirror-cursor {\n  border-left: 1px solid black;\n  border-right: none;\n  width: 0;\n}\n/* Shown when moving in bi-directional text */\n.CodeMirror div.CodeMirror-secondarycursor {\n  border-left: 1px solid silver;\n}\n.cm-fat-cursor .CodeMirror-cursor {\n  width: auto;\n  border: 0 !important;\n  background: #7e7;\n}\n.cm-fat-cursor div.CodeMirror-cursors {\n  z-index: 1;\n}\n.cm-fat-cursor-mark {\n  background-color: rgba(20, 255, 20, 0.5);\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  -moz-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n}\n.cm-animate-fat-cursor {\n  width: auto;\n  border: 0;\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  -moz-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n  background-color: #7e7;\n}\n@-moz-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n@-webkit-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n@keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n/* Can style cursor different in overwrite (non-insert) mode */\n.CodeMirror-overwrite .CodeMirror-cursor {}\n\n.cm-tab { display: inline-block; text-decoration: inherit; }\n\n.CodeMirror-rulers {\n  position: absolute;\n  left: 0; right: 0; top: -50px; bottom: 0;\n  overflow: hidden;\n}\n.CodeMirror-ruler {\n  border-left: 1px solid #ccc;\n  top: 0; bottom: 0;\n  position: absolute;\n}\n\n/* DEFAULT THEME */\n\n.cm-s-default .cm-header {color: blue;}\n.cm-s-default .cm-quote {color: #090;}\n.cm-negative {color: #d44;}\n.cm-positive {color: #292;}\n.cm-header, .cm-strong {font-weight: bold;}\n.cm-em {font-style: italic;}\n.cm-link {text-decoration: underline;}\n.cm-strikethrough {text-decoration: line-through;}\n\n.cm-s-default .cm-keyword {color: #708;}\n.cm-s-default .cm-atom {color: #219;}\n.cm-s-default .cm-number {color: #164;}\n.cm-s-default .cm-def {color: #00f;}\n.cm-s-default .cm-variable,\n.cm-s-default .cm-punctuation,\n.cm-s-default .cm-property,\n.cm-s-default .cm-operator {}\n.cm-s-default .cm-variable-2 {color: #05a;}\n.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}\n.cm-s-default .cm-comment {color: #a50;}\n.cm-s-default .cm-string {color: #a11;}\n.cm-s-default .cm-string-2 {color: #f50;}\n.cm-s-default .cm-meta {color: #555;}\n.cm-s-default .cm-qualifier {color: #555;}\n.cm-s-default .cm-builtin {color: #30a;}\n.cm-s-default .cm-bracket {color: #997;}\n.cm-s-default .cm-tag {color: #170;}\n.cm-s-default .cm-attribute {color: #00c;}\n.cm-s-default .cm-hr {color: #999;}\n.cm-s-default .cm-link {color: #00c;}\n\n.cm-s-default .cm-error {color: #f00;}\n.cm-invalidchar {color: #f00;}\n\n.CodeMirror-composing { border-bottom: 2px solid; }\n\n/* Default styles for common addons */\n\ndiv.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}\ndiv.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}\n.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }\n.CodeMirror-activeline-background {background: #e8f2ff;}\n\n/* STOP */\n\n/* The rest of this file contains styles related to the mechanics of\n   the editor. You probably shouldn't touch them. */\n\n.CodeMirror {\n  position: relative;\n  overflow: hidden;\n  background: white;\n}\n\n.CodeMirror-scroll {\n  overflow: scroll !important; /* Things will break if this is overridden */\n  /* 50px is the magic margin used to hide the element's real scrollbars */\n  /* See overflow: hidden in .CodeMirror */\n  margin-bottom: -50px; margin-right: -50px;\n  padding-bottom: 50px;\n  height: 100%;\n  outline: none; /* Prevent dragging from highlighting the element */\n  position: relative;\n}\n.CodeMirror-sizer {\n  position: relative;\n  border-right: 50px solid transparent;\n}\n\n/* The fake, visible scrollbars. Used to force redraw during scrolling\n   before actual scrolling happens, thus preventing shaking and\n   flickering artifacts. */\n.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  position: absolute;\n  z-index: 6;\n  display: none;\n}\n.CodeMirror-vscrollbar {\n  right: 0; top: 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n.CodeMirror-hscrollbar {\n  bottom: 0; left: 0;\n  overflow-y: hidden;\n  overflow-x: scroll;\n}\n.CodeMirror-scrollbar-filler {\n  right: 0; bottom: 0;\n}\n.CodeMirror-gutter-filler {\n  left: 0; bottom: 0;\n}\n\n.CodeMirror-gutters {\n  position: absolute; left: 0; top: 0;\n  min-height: 100%;\n  z-index: 3;\n}\n.CodeMirror-gutter {\n  white-space: normal;\n  height: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-bottom: -50px;\n}\n.CodeMirror-gutter-wrapper {\n  position: absolute;\n  z-index: 4;\n  background: none !important;\n  border: none !important;\n}\n.CodeMirror-gutter-background {\n  position: absolute;\n  top: 0; bottom: 0;\n  z-index: 4;\n}\n.CodeMirror-gutter-elt {\n  position: absolute;\n  cursor: default;\n  z-index: 4;\n}\n.CodeMirror-gutter-wrapper ::selection { background-color: transparent }\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-lines {\n  cursor: text;\n  min-height: 1px; /* prevents collapsing before first draw */\n}\n.CodeMirror pre.CodeMirror-line,\n.CodeMirror pre.CodeMirror-line-like {\n  /* Reset some styles that the rest of the page might have set */\n  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;\n  border-width: 0;\n  background: transparent;\n  font-family: inherit;\n  font-size: inherit;\n  margin: 0;\n  white-space: pre;\n  word-wrap: normal;\n  line-height: inherit;\n  color: inherit;\n  z-index: 2;\n  position: relative;\n  overflow: visible;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-font-variant-ligatures: contextual;\n  font-variant-ligatures: contextual;\n}\n.CodeMirror-wrap pre.CodeMirror-line,\n.CodeMirror-wrap pre.CodeMirror-line-like {\n  word-wrap: break-word;\n  white-space: pre-wrap;\n  word-break: normal;\n}\n\n.CodeMirror-linebackground {\n  position: absolute;\n  left: 0; right: 0; top: 0; bottom: 0;\n  z-index: 0;\n}\n\n.CodeMirror-linewidget {\n  position: relative;\n  z-index: 2;\n  padding: 0.1px; /* Force widget margins to stay inside of the container */\n}\n\n.CodeMirror-widget {}\n\n.CodeMirror-rtl pre { direction: rtl; }\n\n.CodeMirror-code {\n  outline: none;\n}\n\n/* Force content-box sizing for the elements where we expect it */\n.CodeMirror-scroll,\n.CodeMirror-sizer,\n.CodeMirror-gutter,\n.CodeMirror-gutters,\n.CodeMirror-linenumber {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n}\n\n.CodeMirror-measure {\n  position: absolute;\n  width: 100%;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.CodeMirror-cursor {\n  position: absolute;\n  pointer-events: none;\n}\n.CodeMirror-measure pre { position: static; }\n\ndiv.CodeMirror-cursors {\n  visibility: hidden;\n  position: relative;\n  z-index: 3;\n}\ndiv.CodeMirror-dragcursors {\n  visibility: visible;\n}\n\n.CodeMirror-focused div.CodeMirror-cursors {\n  visibility: visible;\n}\n\n.CodeMirror-selected { background: #d9d9d9; }\n.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }\n.CodeMirror-crosshair { cursor: crosshair; }\n.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.cm-searching {\n  background-color: #ffa;\n  background-color: rgba(255, 255, 0, .4);\n}\n\n/* Used to force a border model for a node */\n.cm-force-border { padding-right: .1px; }\n\n@media print {\n  /* Hide the cursor when printing */\n  .CodeMirror div.CodeMirror-cursors {\n    visibility: hidden;\n  }\n}\n\n/* See issue #2901 */\n.cm-tab-wrap-hack:after { content: ''; }\n\n/* Help users use markselection to safely style text background */\nspan.CodeMirror-selectedtext { background: none; }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "/* BASICS */\n\n.CodeMirror {\n  /* Set height, width, borders, and global font properties here */\n  font-family: monospace;\n  height: 300px;\n  color: black;\n  direction: ltr;\n}\n\n/* PADDING */\n\n.CodeMirror-lines {\n  padding: 4px 0; /* Vertical padding around content */\n}\n.CodeMirror pre.CodeMirror-line,\n.CodeMirror pre.CodeMirror-line-like {\n  padding: 0 4px; /* Horizontal padding of content */\n}\n\n.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  background-color: white; /* The little square between H and V scrollbars */\n}\n\n/* GUTTER */\n\n.CodeMirror-gutters {\n  border-right: 1px solid #ddd;\n  background-color: #f7f7f7;\n  white-space: nowrap;\n}\n.CodeMirror-linenumbers {}\n.CodeMirror-linenumber {\n  padding: 0 3px 0 5px;\n  min-width: 20px;\n  text-align: right;\n  color: #999;\n  white-space: nowrap;\n}\n\n.CodeMirror-guttermarker { color: black; }\n.CodeMirror-guttermarker-subtle { color: #999; }\n\n/* CURSOR */\n\n.CodeMirror-cursor {\n  border-left: 1px solid black;\n  border-right: none;\n  width: 0;\n}\n/* Shown when moving in bi-directional text */\n.CodeMirror div.CodeMirror-secondarycursor {\n  border-left: 1px solid silver;\n}\n.cm-fat-cursor .CodeMirror-cursor {\n  width: auto;\n  border: 0 !important;\n  background: #7e7;\n}\n.cm-fat-cursor div.CodeMirror-cursors {\n  z-index: 1;\n}\n.cm-fat-cursor-mark {\n  background-color: rgba(20, 255, 20, 0.5);\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  -moz-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n}\n.cm-animate-fat-cursor {\n  width: auto;\n  border: 0;\n  -webkit-animation: blink 1.06s steps(1) infinite;\n  -moz-animation: blink 1.06s steps(1) infinite;\n  animation: blink 1.06s steps(1) infinite;\n  background-color: #7e7;\n}\n@-moz-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n@-webkit-keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n@keyframes blink {\n  0% {}\n  50% { background-color: transparent; }\n  100% {}\n}\n\n/* Can style cursor different in overwrite (non-insert) mode */\n.CodeMirror-overwrite .CodeMirror-cursor {}\n\n.cm-tab { display: inline-block; text-decoration: inherit; }\n\n.CodeMirror-rulers {\n  position: absolute;\n  left: 0; right: 0; top: -50px; bottom: 0;\n  overflow: hidden;\n}\n.CodeMirror-ruler {\n  border-left: 1px solid #ccc;\n  top: 0; bottom: 0;\n  position: absolute;\n}\n\n/* DEFAULT THEME */\n\n.cm-s-default .cm-header {color: blue;}\n.cm-s-default .cm-quote {color: #090;}\n.cm-negative {color: #d44;}\n.cm-positive {color: #292;}\n.cm-header, .cm-strong {font-weight: bold;}\n.cm-em {font-style: italic;}\n.cm-link {text-decoration: underline;}\n.cm-strikethrough {text-decoration: line-through;}\n\n.cm-s-default .cm-keyword {color: #708;}\n.cm-s-default .cm-atom {color: #219;}\n.cm-s-default .cm-number {color: #164;}\n.cm-s-default .cm-def {color: #00f;}\n.cm-s-default .cm-variable,\n.cm-s-default .cm-punctuation,\n.cm-s-default .cm-property,\n.cm-s-default .cm-operator {}\n.cm-s-default .cm-variable-2 {color: #05a;}\n.cm-s-default .cm-variable-3, .cm-s-default .cm-type {color: #085;}\n.cm-s-default .cm-comment {color: #a50;}\n.cm-s-default .cm-string {color: #a11;}\n.cm-s-default .cm-string-2 {color: #f50;}\n.cm-s-default .cm-meta {color: #555;}\n.cm-s-default .cm-qualifier {color: #555;}\n.cm-s-default .cm-builtin {color: #30a;}\n.cm-s-default .cm-bracket {color: #997;}\n.cm-s-default .cm-tag {color: #170;}\n.cm-s-default .cm-attribute {color: #00c;}\n.cm-s-default .cm-hr {color: #999;}\n.cm-s-default .cm-link {color: #00c;}\n\n.cm-s-default .cm-error {color: #f00;}\n.cm-invalidchar {color: #f00;}\n\n.CodeMirror-composing { border-bottom: 2px solid; }\n\n/* Default styles for common addons */\n\ndiv.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}\ndiv.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}\n.CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }\n.CodeMirror-activeline-background {background: #e8f2ff;}\n\n/* STOP */\n\n/* The rest of this file contains styles related to the mechanics of\n   the editor. You probably shouldn't touch them. */\n\n.CodeMirror {\n  position: relative;\n  overflow: hidden;\n  background: white;\n}\n\n.CodeMirror-scroll {\n  overflow: scroll !important; /* Things will break if this is overridden */\n  /* 50px is the magic margin used to hide the element's real scrollbars */\n  /* See overflow: hidden in .CodeMirror */\n  margin-bottom: -50px; margin-right: -50px;\n  padding-bottom: 50px;\n  height: 100%;\n  outline: none; /* Prevent dragging from highlighting the element */\n  position: relative;\n}\n.CodeMirror-sizer {\n  position: relative;\n  border-right: 50px solid transparent;\n}\n\n/* The fake, visible scrollbars. Used to force redraw during scrolling\n   before actual scrolling happens, thus preventing shaking and\n   flickering artifacts. */\n.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler {\n  position: absolute;\n  z-index: 6;\n  display: none;\n  outline: none;\n}\n.CodeMirror-vscrollbar {\n  right: 0; top: 0;\n  overflow-x: hidden;\n  overflow-y: scroll;\n}\n.CodeMirror-hscrollbar {\n  bottom: 0; left: 0;\n  overflow-y: hidden;\n  overflow-x: scroll;\n}\n.CodeMirror-scrollbar-filler {\n  right: 0; bottom: 0;\n}\n.CodeMirror-gutter-filler {\n  left: 0; bottom: 0;\n}\n\n.CodeMirror-gutters {\n  position: absolute; left: 0; top: 0;\n  min-height: 100%;\n  z-index: 3;\n}\n.CodeMirror-gutter {\n  white-space: normal;\n  height: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-bottom: -50px;\n}\n.CodeMirror-gutter-wrapper {\n  position: absolute;\n  z-index: 4;\n  background: none !important;\n  border: none !important;\n}\n.CodeMirror-gutter-background {\n  position: absolute;\n  top: 0; bottom: 0;\n  z-index: 4;\n}\n.CodeMirror-gutter-elt {\n  position: absolute;\n  cursor: default;\n  z-index: 4;\n}\n.CodeMirror-gutter-wrapper ::selection { background-color: transparent }\n.CodeMirror-gutter-wrapper ::-moz-selection { background-color: transparent }\n\n.CodeMirror-lines {\n  cursor: text;\n  min-height: 1px; /* prevents collapsing before first draw */\n}\n.CodeMirror pre.CodeMirror-line,\n.CodeMirror pre.CodeMirror-line-like {\n  /* Reset some styles that the rest of the page might have set */\n  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;\n  border-width: 0;\n  background: transparent;\n  font-family: inherit;\n  font-size: inherit;\n  margin: 0;\n  white-space: pre;\n  word-wrap: normal;\n  line-height: inherit;\n  color: inherit;\n  z-index: 2;\n  position: relative;\n  overflow: visible;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-font-variant-ligatures: contextual;\n  font-variant-ligatures: contextual;\n}\n.CodeMirror-wrap pre.CodeMirror-line,\n.CodeMirror-wrap pre.CodeMirror-line-like {\n  word-wrap: break-word;\n  white-space: pre-wrap;\n  word-break: normal;\n}\n\n.CodeMirror-linebackground {\n  position: absolute;\n  left: 0; right: 0; top: 0; bottom: 0;\n  z-index: 0;\n}\n\n.CodeMirror-linewidget {\n  position: relative;\n  z-index: 2;\n  padding: 0.1px; /* Force widget margins to stay inside of the container */\n}\n\n.CodeMirror-widget {}\n\n.CodeMirror-rtl pre { direction: rtl; }\n\n.CodeMirror-code {\n  outline: none;\n}\n\n/* Force content-box sizing for the elements where we expect it */\n.CodeMirror-scroll,\n.CodeMirror-sizer,\n.CodeMirror-gutter,\n.CodeMirror-gutters,\n.CodeMirror-linenumber {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n}\n\n.CodeMirror-measure {\n  position: absolute;\n  width: 100%;\n  height: 0;\n  overflow: hidden;\n  visibility: hidden;\n}\n\n.CodeMirror-cursor {\n  position: absolute;\n  pointer-events: none;\n}\n.CodeMirror-measure pre { position: static; }\n\ndiv.CodeMirror-cursors {\n  visibility: hidden;\n  position: relative;\n  z-index: 3;\n}\ndiv.CodeMirror-dragcursors {\n  visibility: visible;\n}\n\n.CodeMirror-focused div.CodeMirror-cursors {\n  visibility: visible;\n}\n\n.CodeMirror-selected { background: #d9d9d9; }\n.CodeMirror-focused .CodeMirror-selected { background: #d7d4f0; }\n.CodeMirror-crosshair { cursor: crosshair; }\n.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }\n.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #d7d4f0; }\n\n.cm-searching {\n  background-color: #ffa;\n  background-color: rgba(255, 255, 0, .4);\n}\n\n/* Used to force a border model for a node */\n.cm-force-border { padding-right: .1px; }\n\n@media print {\n  /* Hide the cursor when printing */\n  .CodeMirror div.CodeMirror-cursors {\n    visibility: hidden;\n  }\n}\n\n/* See issue #2901 */\n.cm-tab-wrap-hack:after { content: ''; }\n\n/* Help users use markselection to safely style text background */\nspan.CodeMirror-selectedtext { background: none; }\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -10702,11 +10712,11 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, "/**\n    Name:       IDEA default theme\n    From IntelliJ IDEA by JetBrains\n */\n\n.cm-s-idea span.cm-meta { color: #808000; }\n.cm-s-idea span.cm-number { color: #0000FF; }\n.cm-s-idea span.cm-keyword { line-height: 1em; font-weight: bold; color: #000080; }\n.cm-s-idea span.cm-atom { font-weight: bold; color: #000080; }\n.cm-s-idea span.cm-def { color: #000000; }\n.cm-s-idea span.cm-variable { color: black; }\n.cm-s-idea span.cm-variable-2 { color: black; }\n.cm-s-idea span.cm-variable-3, .cm-s-idea span.cm-type { color: black; }\n.cm-s-idea span.cm-property { color: black; }\n.cm-s-idea span.cm-operator { color: black; }\n.cm-s-idea span.cm-comment { color: #808080; }\n.cm-s-idea span.cm-string { color: #008000; }\n.cm-s-idea span.cm-string-2 { color: #008000; }\n.cm-s-idea span.cm-qualifier { color: #555; }\n.cm-s-idea span.cm-error { color: #FF0000; }\n.cm-s-idea span.cm-attribute { color: #0000FF; }\n.cm-s-idea span.cm-tag { color: #000080; }\n.cm-s-idea span.cm-link { color: #0000FF; }\n.cm-s-idea .CodeMirror-activeline-background { background: #FFFAE3; }\n\n.cm-s-idea span.cm-builtin { color: #30a; }\n.cm-s-idea span.cm-bracket { color: #cc7; }\n.cm-s-idea  { font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;}\n\n\n.cm-s-idea .CodeMirror-matchingbracket { outline:1px solid grey; color:black !important; }\n\n.CodeMirror-hints.idea {\n  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;\n  color: #616569;\n  background-color: #ebf3fd !important;\n}\n\n.CodeMirror-hints.idea .CodeMirror-hint-active {\n  background-color: #a2b8c9 !important;\n  color: #5c6065 !important;\n}", ""]);
 // Exports
@@ -10743,11 +10753,11 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".cm-s-rubyblue.CodeMirror { background: #112435; color: white; }\n.cm-s-rubyblue div.CodeMirror-selected { background: #38566F; }\n.cm-s-rubyblue .CodeMirror-line::selection, .cm-s-rubyblue .CodeMirror-line > span::selection, .cm-s-rubyblue .CodeMirror-line > span > span::selection { background: rgba(56, 86, 111, 0.99); }\n.cm-s-rubyblue .CodeMirror-line::-moz-selection, .cm-s-rubyblue .CodeMirror-line > span::-moz-selection, .cm-s-rubyblue .CodeMirror-line > span > span::-moz-selection { background: rgba(56, 86, 111, 0.99); }\n.cm-s-rubyblue .CodeMirror-gutters { background: #1F4661; border-right: 7px solid #3E7087; }\n.cm-s-rubyblue .CodeMirror-guttermarker { color: white; }\n.cm-s-rubyblue .CodeMirror-guttermarker-subtle { color: #3E7087; }\n.cm-s-rubyblue .CodeMirror-linenumber { color: white; }\n.cm-s-rubyblue .CodeMirror-cursor { border-left: 1px solid white; }\n\n.cm-s-rubyblue span.cm-comment { color: #999; font-style:italic; line-height: 1em; }\n.cm-s-rubyblue span.cm-atom { color: #F4C20B; }\n.cm-s-rubyblue span.cm-number, .cm-s-rubyblue span.cm-attribute { color: #82C6E0; }\n.cm-s-rubyblue span.cm-keyword { color: #F0F; }\n.cm-s-rubyblue span.cm-string { color: #F08047; }\n.cm-s-rubyblue span.cm-meta { color: #F0F; }\n.cm-s-rubyblue span.cm-variable-2, .cm-s-rubyblue span.cm-tag { color: #7BD827; }\n.cm-s-rubyblue span.cm-variable-3, .cm-s-rubyblue span.cm-def, .cm-s-rubyblue span.cm-type { color: white; }\n.cm-s-rubyblue span.cm-bracket { color: #F0F; }\n.cm-s-rubyblue span.cm-link { color: #F4C20B; }\n.cm-s-rubyblue span.CodeMirror-matchingbracket { color:#F0F !important; }\n.cm-s-rubyblue span.cm-builtin, .cm-s-rubyblue span.cm-special { color: #FF9D00; }\n.cm-s-rubyblue span.cm-error { color: #AF2018; }\n\n.cm-s-rubyblue .CodeMirror-activeline-background { background: #173047; }\n", ""]);
 // Exports
@@ -10913,7 +10923,7 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
       if (ch != ">" || !state.lexical || state.lexical.type != ">") {
         if (stream.eat("=")) {
           if (ch == "!" || ch == "=") stream.eat("=")
-        } else if (/[<>*+\-]/.test(ch)) {
+        } else if (/[<>*+\-|&?]/.test(ch)) {
           stream.eat(ch)
           if (ch == ">") stream.eat(ch)
         }
@@ -11822,10 +11832,10 @@ CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript
 
   function makeMarker(cm, labels, severity, multiple, tooltips) {
     var marker = document.createElement("div"), inner = marker;
-    marker.className = "CodeMirror-lint-marker-" + severity;
+    marker.className = "CodeMirror-lint-marker CodeMirror-lint-marker-" + severity;
     if (multiple) {
       inner = marker.appendChild(document.createElement("div"));
-      inner.className = "CodeMirror-lint-marker-multiple";
+      inner.className = "CodeMirror-lint-marker CodeMirror-lint-marker-multiple";
     }
 
     if (tooltips != false) CodeMirror.on(inner, "mouseover", function(e) {
@@ -11853,7 +11863,7 @@ CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript
     var severity = ann.severity;
     if (!severity) severity = "error";
     var tip = document.createElement("div");
-    tip.className = "CodeMirror-lint-message-" + severity;
+    tip.className = "CodeMirror-lint-message CodeMirror-lint-message-" + severity;
     if (typeof ann.messageHTML != 'undefined') {
       tip.innerHTML = ann.messageHTML;
     } else {
@@ -11922,7 +11932,7 @@ CodeMirror.defineMIME("application/typescript", { name: "javascript", typescript
         if (state.hasGutter) tipLabel.appendChild(annotationTooltip(ann));
 
         if (ann.to) state.marked.push(cm.markText(ann.from, ann.to, {
-          className: "CodeMirror-lint-mark-" + severity,
+          className: "CodeMirror-lint-mark CodeMirror-lint-mark-" + severity,
           __annotation: ann
         }));
       }
@@ -12042,10 +12052,10 @@ CodeMirror.registerHelper("lint", "json", function(text) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_ref_2_1_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_json_editor_vue_vue_type_style_index_0_id_09ebc5e1_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 /* 58 */
@@ -12053,11 +12063,11 @@ CodeMirror.registerHelper("lint", "json", function(text) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, "\n.json-editor[data-v-09ebc5e1] {\n  height: 100%;\n  position: relative;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror {\n  height: auto;\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror-scroll {\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .cm-s-rubyblue span.cm-string {\n  color: #f08047;\n}\n", ""]);
 // Exports

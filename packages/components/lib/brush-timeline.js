@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 207);
+/******/ 	return __webpack_require__(__webpack_require__.s = 206);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -331,27 +331,27 @@ module.exports = g;
 
 /***/ }),
 
+/***/ 191:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_9_0_3_sass_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
+/* harmony import */ var _node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_9_0_3_sass_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_9_0_3_sass_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_style_loader_1_3_0_style_loader_dist_cjs_js_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_9_0_3_sass_loader_dist_cjs_js_node_modules_vue_loader_15_9_3_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_sass_loader_dist_cjs_js_node_modules_vue_loader_lib_index_js_vue_loader_options_timeline_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
-/***/ 193:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.i, ".brush-timeline .vis-timeline{border:none;font-size:14pt;background:#fff}.brush-timeline .vis-timeline .vis-panel.vis-bottom{border:none !important}.brush-timeline .vis-timeline .vis-panel.vis-top{border-bottom:1px solid #ededed !important}.brush-timeline .vis-timeline .vis-minor{display:none}.brush-timeline .vis-timeline .vis-range{display:none}.brush-timeline .vis-timeline .vis-text div{visibility:hidden}.brush-timeline .vis-timeline .vis-line{visibility:hidden}.brush-timeline .vis-item-content{max-width:250px;white-space:pre-wrap}.brush-timeline .vis-box{font-size:15pt;color:transparent;background:transparent;border:0;transform:translate(10px, 20px)}.brush-timeline .vis-box .vis-item-content .date{font-size:16px;color:#333}.brush-timeline .vis-box .vis-item-content a{font-size:16px;font-weight:normal;font-stretch:normal;line-height:14px;letter-spacing:1px;color:#4865e9;text-decoration:none}.brush-timeline .vis-item,.brush-timeline .vis-item.vis-line{border-width:3px}.brush-timeline .vis-item.vis-dot{border-width:10px;border-radius:10px;border-color:#738dff;background-color:#738dff}.brush-timeline .vis-item.vis-dot.vis-selected{border-color:#738dff}.brush-timeline .vis-item.vis-selected{border-color:transparent;background-color:transparent}.brush-timeline .vis-time-axis .vis-text{padding-top:10px;padding-left:10px}.brush-timeline .vis-time-axis .vis-text.vis-major{font-weight:bold}.brush-timeline .vis-time-axis .vis-grid.vis-minor{border-width:2px}.brush-timeline .vis-time-axis .vis-grid.vis-major{border-width:2px;border:0}.brush-timeline .timeline-tooltip{position:fixed;box-sizing:border-box;margin:0;padding:0;color:rgba(0,0,0,0.65);font-size:14px;font-variant:tabular-nums;line-height:1.5;list-style:none;font-feature-settings:'tnum';z-index:1060;display:block;max-width:250px;visibility:visible}.brush-timeline .timeline-tooltip-placement-top{padding-bottom:8px}.brush-timeline .timeline-tooltip-inner{min-width:30px;min-height:24px;padding:6px 8px;color:#fff;text-align:left;text-decoration:none;word-wrap:break-word;background-color:rgba(0,0,0,0.75);border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,0.15)}.brush-timeline .timeline-tooltip-arrow{position:absolute;bottom:-1px;display:block;width:0;height:0;overflow:hidden;border:5px solid;border-color:#333 transparent transparent transparent}.brush-timeline .timeline-tooltip-placement-top .timeline-tooltip-arrow{left:20px;transform:translateX(-50%)}.brush-timeline .timeline-tooltip-arrow:before{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:5px;height:5px;margin:auto;background-color:rgba(0,0,0,0.75);content:'';pointer-events:auto}.brush-timeline .timeline-border-start{position:fixed;border-top:4px solid red;height:0}\n", ""]);
 // Exports
@@ -360,14 +360,14 @@ ___CSS_LOADER_EXPORT___.push([module.i, ".brush-timeline .vis-timeline{border:no
 
 /***/ }),
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/brush-timeline/src/timeline.vue?vue&type=template&id=50073804&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/brush-timeline/src/timeline.vue?vue&type=template&id=50073804&
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -428,16 +428,16 @@ render._withStripped = true
 
 // CONCATENATED MODULE: ./src/brush-timeline/src/timeline.vue?vue&type=template&id=50073804&
 
-// EXTERNAL MODULE: ./node_modules/vis-timeline/standalone/esm/vis-timeline-graph2d.js
-var vis_timeline_graph2d = __webpack_require__(95);
+// EXTERNAL MODULE: ./node_modules/_vis-timeline@7.3.10@vis-timeline/standalone/esm/vis-timeline-graph2d.js
+var vis_timeline_graph2d = __webpack_require__(94);
 
-// CONCATENATED MODULE: ./node_modules/vis-timeline/standalone/esm/index.js
-
-
-// CONCATENATED MODULE: ./node_modules/vis-timeline/standalone/index.js
+// CONCATENATED MODULE: ./node_modules/_vis-timeline@7.3.10@vis-timeline/standalone/esm/index.js
 
 
-// CONCATENATED MODULE: ./node_modules/d3/dist/package.js
+// CONCATENATED MODULE: ./node_modules/_vis-timeline@7.3.10@vis-timeline/standalone/index.js
+
+
+// CONCATENATED MODULE: ./node_modules/_d3@5.16.0@d3/dist/package.js
 var package_name = "d3";
 var version = "5.16.0";
 var description = "Data-Driven Documents";
@@ -455,12 +455,12 @@ var scripts = {"pretest":"rimraf dist && mkdir dist && json2module package.json 
 var devDependencies = {"json2module":"0.0","rimraf":"2","rollup":"1","rollup-plugin-ascii":"0.0","rollup-plugin-node-resolve":"3","rollup-plugin-terser":"5","tape":"4"};
 var dependencies = {"d3-array":"1","d3-axis":"1","d3-brush":"1","d3-chord":"1","d3-collection":"1","d3-color":"1","d3-contour":"1","d3-dispatch":"1","d3-drag":"1","d3-dsv":"1","d3-ease":"1","d3-fetch":"1","d3-force":"1","d3-format":"1","d3-geo":"1","d3-hierarchy":"1","d3-interpolate":"1","d3-path":"1","d3-polygon":"1","d3-quadtree":"1","d3-random":"1","d3-scale":"2","d3-scale-chromatic":"1","d3-selection":"1","d3-shape":"1","d3-time":"1","d3-time-format":"2","d3-timer":"1","d3-transition":"1","d3-voronoi":"1","d3-zoom":"1"};
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/ascending.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/ascending.js
 /* harmony default export */ var ascending = (function(a, b) {
   return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/bisector.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/bisector.js
 
 
 /* harmony default export */ var bisector = (function(compare) {
@@ -495,7 +495,7 @@ function ascendingComparator(f) {
   };
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/bisect.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/bisect.js
 
 
 
@@ -504,7 +504,7 @@ var bisectRight = ascendingBisect.right;
 var bisectLeft = ascendingBisect.left;
 /* harmony default export */ var bisect = (bisectRight);
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/pairs.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/pairs.js
 /* harmony default export */ var pairs = (function(array, f) {
   if (f == null) f = pair;
   var i = 0, n = array.length - 1, p = array[0], pairs = new Array(n < 0 ? 0 : n);
@@ -516,7 +516,7 @@ function pair(a, b) {
   return [a, b];
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/cross.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/cross.js
 
 
 /* harmony default export */ var cross = (function(values0, values1, reduce) {
@@ -539,17 +539,17 @@ function pair(a, b) {
   return values;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/descending.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/descending.js
 /* harmony default export */ var descending = (function(a, b) {
   return b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/number.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/number.js
 /* harmony default export */ var number = (function(x) {
   return x === null ? NaN : +x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/variance.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/variance.js
 
 
 /* harmony default export */ var variance = (function(values, valueof) {
@@ -584,7 +584,7 @@ function pair(a, b) {
   if (m > 1) return sum / (m - 1);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/deviation.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/deviation.js
 
 
 /* harmony default export */ var deviation = (function(array, f) {
@@ -592,7 +592,7 @@ function pair(a, b) {
   return v ? Math.sqrt(v) : v;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/extent.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/extent.js
 /* harmony default export */ var src_extent = (function(values, valueof) {
   var n = values.length,
       i = -1,
@@ -631,25 +631,25 @@ function pair(a, b) {
   return [min, max];
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/array.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/array.js
 var array_array = Array.prototype;
 
 var slice = array_array.slice;
 var map = array_array.map;
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/constant.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/constant.js
 /* harmony default export */ var constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/identity.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/identity.js
 /* harmony default export */ var identity = (function(x) {
   return x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/range.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/range.js
 /* harmony default export */ var src_range = (function(start, stop, step) {
   start = +start, stop = +stop, step = (n = arguments.length) < 2 ? (stop = start, start = 0, 1) : n < 3 ? 1 : +step;
 
@@ -664,7 +664,7 @@ var map = array_array.map;
   return range;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/ticks.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/ticks.js
 var e10 = Math.sqrt(50),
     e5 = Math.sqrt(10),
     e2 = Math.sqrt(2);
@@ -717,12 +717,12 @@ function tickStep(start, stop, count) {
   return stop < start ? -step1 : step1;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/threshold/sturges.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/threshold/sturges.js
 /* harmony default export */ var sturges = (function(values) {
   return Math.ceil(Math.log(values.length) / Math.LN2) + 1;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/histogram.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/histogram.js
 
 
 
@@ -799,7 +799,7 @@ function tickStep(start, stop, count) {
   return histogram;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/quantile.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/quantile.js
 
 
 /* harmony default export */ var quantile = (function(values, p, valueof) {
@@ -815,7 +815,7 @@ function tickStep(start, stop, count) {
   return value0 + (value1 - value0) * (i - i0);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/threshold/freedmanDiaconis.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/threshold/freedmanDiaconis.js
 
 
 
@@ -826,14 +826,14 @@ function tickStep(start, stop, count) {
   return Math.ceil((max - min) / (2 * (quantile(values, 0.75) - quantile(values, 0.25)) * Math.pow(values.length, -1 / 3)));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/threshold/scott.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/threshold/scott.js
 
 
 /* harmony default export */ var scott = (function(values, min, max) {
   return Math.ceil((max - min) / (3.5 * deviation(values) * Math.pow(values.length, -1 / 3)));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/max.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/max.js
 /* harmony default export */ var src_max = (function(values, valueof) {
   var n = values.length,
       i = -1,
@@ -869,7 +869,7 @@ function tickStep(start, stop, count) {
   return max;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/mean.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/mean.js
 
 
 /* harmony default export */ var src_mean = (function(values, valueof) {
@@ -896,7 +896,7 @@ function tickStep(start, stop, count) {
   if (m) return sum / m;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/median.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/median.js
 
 
 
@@ -926,7 +926,7 @@ function tickStep(start, stop, count) {
   return quantile(numbers.sort(ascending), 0.5);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/merge.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/merge.js
 /* harmony default export */ var src_merge = (function(arrays) {
   var n = arrays.length,
       m,
@@ -949,7 +949,7 @@ function tickStep(start, stop, count) {
   return merged;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/min.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/min.js
 /* harmony default export */ var src_min = (function(values, valueof) {
   var n = values.length,
       i = -1,
@@ -985,14 +985,14 @@ function tickStep(start, stop, count) {
   return min;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/permute.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/permute.js
 /* harmony default export */ var permute = (function(array, indexes) {
   var i = indexes.length, permutes = new Array(i);
   while (i--) permutes[i] = array[indexes[i]];
   return permutes;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/scan.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/scan.js
 
 
 /* harmony default export */ var scan = (function(values, compare) {
@@ -1014,7 +1014,7 @@ function tickStep(start, stop, count) {
   if (compare(xj, xj) === 0) return j;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/shuffle.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/shuffle.js
 /* harmony default export */ var shuffle = (function(array, i0, i1) {
   var m = (i1 == null ? array.length : i1) - (i0 = i0 == null ? 0 : +i0),
       t,
@@ -1030,7 +1030,7 @@ function tickStep(start, stop, count) {
   return array;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/sum.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/sum.js
 /* harmony default export */ var src_sum = (function(values, valueof) {
   var n = values.length,
       i = -1,
@@ -1052,7 +1052,7 @@ function tickStep(start, stop, count) {
   return sum;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/transpose.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/transpose.js
 
 
 /* harmony default export */ var src_transpose = (function(matrix) {
@@ -1069,14 +1069,14 @@ function transpose_length(d) {
   return d.length;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/zip.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/zip.js
 
 
 /* harmony default export */ var zip = (function() {
   return src_transpose(arguments);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-array/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-array@1.2.4@d3-array/src/index.js
 
 
 
@@ -1105,15 +1105,15 @@ function transpose_length(d) {
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-axis/src/array.js
+// CONCATENATED MODULE: ./node_modules/_d3-axis@1.0.12@d3-axis/src/array.js
 var array_slice = Array.prototype.slice;
 
-// CONCATENATED MODULE: ./node_modules/d3-axis/src/identity.js
+// CONCATENATED MODULE: ./node_modules/_d3-axis@1.0.12@d3-axis/src/identity.js
 /* harmony default export */ var src_identity = (function(x) {
   return x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-axis/src/axis.js
+// CONCATENATED MODULE: ./node_modules/_d3-axis@1.0.12@d3-axis/src/axis.js
 
 
 
@@ -1289,10 +1289,10 @@ function axisLeft(scale) {
   return axis_axis(axis_left, scale);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-axis/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-axis@1.0.12@d3-axis/src/index.js
 
 
-// CONCATENATED MODULE: ./node_modules/d3-dispatch/src/dispatch.js
+// CONCATENATED MODULE: ./node_modules/_d3-dispatch@1.0.6@d3-dispatch/src/dispatch.js
 var noop = {value: function() {}};
 
 function dispatch() {
@@ -1378,7 +1378,7 @@ function set(type, name, callback) {
 
 /* harmony default export */ var src_dispatch = (dispatch);
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selector.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selector.js
 function none() {}
 
 /* harmony default export */ var src_selector = (function(selector) {
@@ -1387,7 +1387,7 @@ function none() {}
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/select.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/select.js
 
 
 
@@ -1406,7 +1406,7 @@ function none() {}
   return new Selection(subgroups, this._parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selectorAll.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selectorAll.js
 function selectorAll_empty() {
   return [];
 }
@@ -1417,7 +1417,7 @@ function selectorAll_empty() {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/selectAll.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/selectAll.js
 
 
 
@@ -1436,14 +1436,14 @@ function selectorAll_empty() {
   return new Selection(subgroups, parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/matcher.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/matcher.js
 /* harmony default export */ var matcher = (function(selector) {
   return function() {
     return this.matches(selector);
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/filter.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/filter.js
 
 
 
@@ -1461,12 +1461,12 @@ function selectorAll_empty() {
   return new Selection(subgroups, this._parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/sparse.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/sparse.js
 /* harmony default export */ var sparse = (function(update) {
   return new Array(update.length);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/enter.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/enter.js
 
 
 
@@ -1490,14 +1490,14 @@ EnterNode.prototype = {
   querySelectorAll: function(selector) { return this._parent.querySelectorAll(selector); }
 };
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/constant.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/constant.js
 /* harmony default export */ var src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/data.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/data.js
 
 
 
@@ -1617,7 +1617,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
   return update;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/exit.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/exit.js
 
 
 
@@ -1625,7 +1625,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
   return new Selection(this._exit || this._groups.map(sparse), this._parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/join.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/join.js
 /* harmony default export */ var join = (function(onenter, onupdate, onexit) {
   var enter = this.enter(), update = this, exit = this.exit();
   enter = typeof onenter === "function" ? onenter(enter) : enter.append(onenter + "");
@@ -1634,7 +1634,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
   return enter && update ? enter.merge(update).order() : update;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/merge.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/merge.js
 
 
 /* harmony default export */ var selection_merge = (function(selection) {
@@ -1654,7 +1654,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
   return new Selection(merges, this._parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/order.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/order.js
 /* harmony default export */ var order = (function() {
 
   for (var groups = this._groups, j = -1, m = groups.length; ++j < m;) {
@@ -1669,7 +1669,7 @@ function bindKey(parent, group, enter, update, exit, data, key) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/sort.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/sort.js
 
 
 /* harmony default export */ var sort = (function(compare) {
@@ -1695,7 +1695,7 @@ function sort_ascending(a, b) {
   return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/call.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/call.js
 /* harmony default export */ var call = (function() {
   var callback = arguments[0];
   arguments[0] = this;
@@ -1703,14 +1703,14 @@ function sort_ascending(a, b) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/nodes.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/nodes.js
 /* harmony default export */ var selection_nodes = (function() {
   var nodes = new Array(this.size()), i = -1;
   this.each(function() { nodes[++i] = this; });
   return nodes;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/node.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/node.js
 /* harmony default export */ var selection_node = (function() {
 
   for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
@@ -1723,19 +1723,19 @@ function sort_ascending(a, b) {
   return null;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/size.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/size.js
 /* harmony default export */ var selection_size = (function() {
   var size = 0;
   this.each(function() { ++size; });
   return size;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/empty.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/empty.js
 /* harmony default export */ var selection_empty = (function() {
   return !this.node();
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/each.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/each.js
 /* harmony default export */ var each = (function(callback) {
 
   for (var groups = this._groups, j = 0, m = groups.length; j < m; ++j) {
@@ -1747,7 +1747,7 @@ function sort_ascending(a, b) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespaces.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/namespaces.js
 var xhtml = "http://www.w3.org/1999/xhtml";
 
 /* harmony default export */ var namespaces = ({
@@ -1758,7 +1758,7 @@ var xhtml = "http://www.w3.org/1999/xhtml";
   xmlns: "http://www.w3.org/2000/xmlns/"
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/namespace.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/namespace.js
 
 
 /* harmony default export */ var namespace = (function(name) {
@@ -1767,7 +1767,7 @@ var xhtml = "http://www.w3.org/1999/xhtml";
   return namespaces.hasOwnProperty(prefix) ? {space: namespaces[prefix], local: name} : name;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/attr.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/attr.js
 
 
 function attrRemove(name) {
@@ -1826,14 +1826,14 @@ function attrFunctionNS(fullname, value) {
       : (fullname.local ? attrConstantNS : attrConstant)))(fullname, value));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/window.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/window.js
 /* harmony default export */ var src_window = (function(node) {
   return (node.ownerDocument && node.ownerDocument.defaultView) // node is a Node
       || (node.document && node) // node is a Window
       || node.defaultView; // node is a Document
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/style.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/style.js
 
 
 function styleRemove(name) {
@@ -1870,7 +1870,7 @@ function styleValue(node, name) {
       || src_window(node).getComputedStyle(node, null).getPropertyValue(name);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/property.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/property.js
 function propertyRemove(name) {
   return function() {
     delete this[name];
@@ -1900,7 +1900,7 @@ function propertyFunction(name, value) {
       : this.node()[name];
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/classed.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/classed.js
 function classArray(string) {
   return string.trim().split(/^|\s+/);
 }
@@ -1977,7 +1977,7 @@ function classedFunction(names, value) {
       : classedFalse)(names, value));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/text.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/text.js
 function textRemove() {
   this.textContent = "";
 }
@@ -2004,7 +2004,7 @@ function textFunction(value) {
       : this.node().textContent;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/html.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/html.js
 function htmlRemove() {
   this.innerHTML = "";
 }
@@ -2031,7 +2031,7 @@ function htmlFunction(value) {
       : this.node().innerHTML;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/raise.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/raise.js
 function raise() {
   if (this.nextSibling) this.parentNode.appendChild(this);
 }
@@ -2040,7 +2040,7 @@ function raise() {
   return this.each(raise);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/lower.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/lower.js
 function lower() {
   if (this.previousSibling) this.parentNode.insertBefore(this, this.parentNode.firstChild);
 }
@@ -2049,7 +2049,7 @@ function lower() {
   return this.each(lower);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/creator.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/creator.js
 
 
 
@@ -2076,7 +2076,7 @@ function creatorFixed(fullname) {
       : creatorInherit)(fullname);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/append.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/append.js
 
 
 /* harmony default export */ var append = (function(name) {
@@ -2086,7 +2086,7 @@ function creatorFixed(fullname) {
   });
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/insert.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/insert.js
 
 
 
@@ -2102,7 +2102,7 @@ function constantNull() {
   });
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/remove.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/remove.js
 function remove_remove() {
   var parent = this.parentNode;
   if (parent) parent.removeChild(this);
@@ -2112,7 +2112,7 @@ function remove_remove() {
   return this.each(remove_remove);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/clone.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/clone.js
 function selection_cloneShallow() {
   var clone = this.cloneNode(false), parent = this.parentNode;
   return parent ? parent.insertBefore(clone, this.nextSibling) : clone;
@@ -2127,14 +2127,14 @@ function selection_cloneDeep() {
   return this.select(deep ? selection_cloneDeep : selection_cloneShallow);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/datum.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/datum.js
 /* harmony default export */ var datum = (function(value) {
   return arguments.length
       ? this.property("__data__", value)
       : this.node().__data__;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/on.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/on.js
 var filterEvents = {};
 
 var on_event = null;
@@ -2243,7 +2243,7 @@ function customEvent(event1, listener, that, args) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/dispatch.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/dispatch.js
 
 
 function dispatchEvent(node, type, params) {
@@ -2279,7 +2279,7 @@ function dispatchFunction(type, params) {
       : dispatchConstant)(type, params));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/selection/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/selection/index.js
 
 
 
@@ -2360,7 +2360,7 @@ Selection.prototype = selection_selection.prototype = {
 
 /* harmony default export */ var src_selection = (selection_selection);
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/select.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/select.js
 
 
 /* harmony default export */ var src_select = (function(selector) {
@@ -2369,7 +2369,7 @@ Selection.prototype = selection_selection.prototype = {
       : new Selection([[selector]], selection_root);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-drag/src/noevent.js
+// CONCATENATED MODULE: ./node_modules/_d3-drag@1.2.5@d3-drag/src/noevent.js
 
 
 function nopropagation() {
@@ -2381,7 +2381,7 @@ function nopropagation() {
   on_event.stopImmediatePropagation();
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-drag/src/nodrag.js
+// CONCATENATED MODULE: ./node_modules/_d3-drag@1.2.5@d3-drag/src/nodrag.js
 
 
 
@@ -2411,7 +2411,7 @@ function yesdrag(view, noclick) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-color/src/define.js
+// CONCATENATED MODULE: ./node_modules/_d3-color@1.4.1@d3-color/src/define.js
 /* harmony default export */ var define = (function(constructor, factory, prototype) {
   constructor.prototype = factory.prototype = prototype;
   prototype.constructor = constructor;
@@ -2423,7 +2423,7 @@ function extend(parent, definition) {
   return prototype;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-color/src/color.js
+// CONCATENATED MODULE: ./node_modules/_d3-color@1.4.1@d3-color/src/color.js
 
 
 function Color() {}
@@ -2796,7 +2796,7 @@ function hsl2rgb(h, m1, m2) {
       : m1) * 255;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/basis.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/basis.js
 function basis(t1, v0, v1, v2, v3) {
   var t2 = t1 * t1, t3 = t2 * t1;
   return ((1 - 3 * t1 + 3 * t2 - t3) * v0
@@ -2817,7 +2817,7 @@ function basis(t1, v0, v1, v2, v3) {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/basisClosed.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/basisClosed.js
 
 
 /* harmony default export */ var basisClosed = (function(values) {
@@ -2832,14 +2832,14 @@ function basis(t1, v0, v1, v2, v3) {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/constant.js
-/* harmony default export */ var d3_interpolate_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/constant.js
+/* harmony default export */ var _d3_interpolate_1_4_0_d3_interpolate_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/color.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/color.js
 
 
 function linear(a, d) {
@@ -2856,21 +2856,21 @@ function exponential(a, b, y) {
 
 function hue(a, b) {
   var d = b - a;
-  return d ? linear(a, d > 180 || d < -180 ? d - 360 * Math.round(d / 360) : d) : d3_interpolate_src_constant(isNaN(a) ? b : a);
+  return d ? linear(a, d > 180 || d < -180 ? d - 360 * Math.round(d / 360) : d) : _d3_interpolate_1_4_0_d3_interpolate_src_constant(isNaN(a) ? b : a);
 }
 
 function gamma(y) {
   return (y = +y) === 1 ? nogamma : function(a, b) {
-    return b - a ? exponential(a, b, y) : d3_interpolate_src_constant(isNaN(a) ? b : a);
+    return b - a ? exponential(a, b, y) : _d3_interpolate_1_4_0_d3_interpolate_src_constant(isNaN(a) ? b : a);
   };
 }
 
 function nogamma(a, b) {
   var d = b - a;
-  return d ? linear(a, d) : d3_interpolate_src_constant(isNaN(a) ? b : a);
+  return d ? linear(a, d) : _d3_interpolate_1_4_0_d3_interpolate_src_constant(isNaN(a) ? b : a);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/rgb.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/rgb.js
 
 
 
@@ -2927,7 +2927,7 @@ function rgbSpline(spline) {
 var rgbBasis = rgbSpline(src_basis);
 var rgbBasisClosed = rgbSpline(basisClosed);
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/numberArray.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/numberArray.js
 /* harmony default export */ var numberArray = (function(a, b) {
   if (!b) b = [];
   var n = a ? Math.min(b.length, a.length) : 0,
@@ -2943,7 +2943,7 @@ function isNumberArray(x) {
   return ArrayBuffer.isView(x) && !(x instanceof DataView);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/array.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/array.js
 
 
 
@@ -2967,7 +2967,7 @@ function genericArray(a, b) {
   };
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/date.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/date.js
 /* harmony default export */ var src_date = (function(a, b) {
   var d = new Date;
   return a = +a, b = +b, function(t) {
@@ -2975,14 +2975,14 @@ function genericArray(a, b) {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/number.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/number.js
 /* harmony default export */ var src_number = (function(a, b) {
   return a = +a, b = +b, function(t) {
     return a * (1 - t) + b * t;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/object.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/object.js
 
 
 /* harmony default export */ var object = (function(a, b) {
@@ -3007,7 +3007,7 @@ function genericArray(a, b) {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/string.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/string.js
 
 
 var reA = /[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,
@@ -3073,7 +3073,7 @@ function one(b) {
         });
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/value.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/value.js
 
 
 
@@ -3086,7 +3086,7 @@ function one(b) {
 
 /* harmony default export */ var src_value = (function(a, b) {
   var t = typeof b, c;
-  return b == null || t === "boolean" ? d3_interpolate_src_constant(b)
+  return b == null || t === "boolean" ? _d3_interpolate_1_4_0_d3_interpolate_src_constant(b)
       : (t === "number" ? src_number
       : t === "string" ? ((c = color_color(b)) ? (b = c, src_rgb) : src_string)
       : b instanceof color_color ? src_rgb
@@ -3097,7 +3097,7 @@ function one(b) {
       : src_number)(a, b);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/sourceEvent.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/sourceEvent.js
 
 
 /* harmony default export */ var sourceEvent = (function() {
@@ -3106,7 +3106,7 @@ function one(b) {
   return current;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/point.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/point.js
 /* harmony default export */ var src_point = (function(node, event) {
   var svg = node.ownerSVGElement || node;
 
@@ -3121,7 +3121,7 @@ function one(b) {
   return [event.clientX - rect.left - node.clientLeft, event.clientY - rect.top - node.clientTop];
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/touch.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/touch.js
 
 
 
@@ -3137,7 +3137,7 @@ function one(b) {
   return null;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/mouse.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/mouse.js
 
 
 
@@ -3147,7 +3147,7 @@ function one(b) {
   return src_point(node, event);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-timer/src/timer.js
+// CONCATENATED MODULE: ./node_modules/_d3-timer@1.0.10@d3-timer/src/timer.js
 var timer_frame = 0, // is an animation frame pending?
     timeout = 0, // is a timeout pending?
     timer_interval = 0, // are any timers active?
@@ -3259,7 +3259,7 @@ function sleep(time) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-timer/src/timeout.js
+// CONCATENATED MODULE: ./node_modules/_d3-timer@1.0.10@d3-timer/src/timeout.js
 
 
 /* harmony default export */ var src_timeout = (function(callback, delay, time) {
@@ -3272,7 +3272,7 @@ function sleep(time) {
   return t;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/schedule.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/schedule.js
 
 
 
@@ -3427,7 +3427,7 @@ function schedule_create(node, id, self) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/interrupt.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/interrupt.js
 
 
 /* harmony default export */ var interrupt = (function(node, name) {
@@ -3453,7 +3453,7 @@ function schedule_create(node, id, self) {
   if (empty) delete node.__transition;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/selection/interrupt.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/selection/interrupt.js
 
 
 /* harmony default export */ var selection_interrupt = (function(name) {
@@ -3462,7 +3462,7 @@ function schedule_create(node, id, self) {
   });
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/decompose.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/transform/decompose.js
 var degrees = 180 / Math.PI;
 
 var decompose_identity = {
@@ -3490,7 +3490,7 @@ var decompose_identity = {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/parse.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/transform/parse.js
 
 
 var cssNode,
@@ -3517,7 +3517,7 @@ function parseSvg(value) {
   return decompose(value.a, value.b, value.c, value.d, value.e, value.f);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/transform/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/transform/index.js
 
 
 
@@ -3582,7 +3582,7 @@ function interpolateTransform(parse, pxComma, pxParen, degParen) {
 var interpolateTransformCss = interpolateTransform(parseCss, "px, ", "px)", "deg)");
 var interpolateTransformSvg = interpolateTransform(parseSvg, ", ", ")", ")");
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/tween.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/tween.js
 
 
 function tweenRemove(id, name) {
@@ -3665,7 +3665,7 @@ function tweenValue(transition, name, value) {
   };
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/interpolate.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/interpolate.js
 
 
 
@@ -3677,7 +3677,7 @@ function tweenValue(transition, name, value) {
       : src_string)(a, b);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/attr.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/attr.js
 
 
 
@@ -3757,7 +3757,7 @@ function attr_attrFunctionNS(fullname, interpolate, value) {
       : (fullname.local ? attr_attrConstantNS : attr_attrConstant)(fullname, i, value));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/attrTween.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/attrTween.js
 
 
 function attrInterpolate(name, i) {
@@ -3803,7 +3803,7 @@ function attrTween(name, value) {
   return this.tween(key, (fullname.local ? attrTweenNS : attrTween)(fullname, value));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/delay.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/delay.js
 
 
 function delayFunction(id, value) {
@@ -3828,7 +3828,7 @@ function delayConstant(id, value) {
       : schedule_get(this.node(), id).delay;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/duration.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/duration.js
 
 
 function durationFunction(id, value) {
@@ -3853,7 +3853,7 @@ function durationConstant(id, value) {
       : schedule_get(this.node(), id).duration;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/ease.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/ease.js
 
 
 function easeConstant(id, value) {
@@ -3871,7 +3871,7 @@ function easeConstant(id, value) {
       : schedule_get(this.node(), id).ease;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/filter.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/filter.js
 
 
 
@@ -3889,7 +3889,7 @@ function easeConstant(id, value) {
   return new Transition(subgroups, this._parents, this._name, this._id);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/merge.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/merge.js
 
 
 /* harmony default export */ var transition_merge = (function(transition) {
@@ -3910,7 +3910,7 @@ function easeConstant(id, value) {
   return new Transition(merges, this._parents, this._name, this._id);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/on.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/on.js
 
 
 function on_start(name) {
@@ -3944,7 +3944,7 @@ function onFunction(id, name, listener) {
       : this.each(onFunction(id, name, listener));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/remove.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/remove.js
 function removeFunction(id) {
   return function() {
     var parent = this.parentNode;
@@ -3957,7 +3957,7 @@ function removeFunction(id) {
   return this.on("end.remove", removeFunction(this._id));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/select.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/select.js
 
 
 
@@ -3981,7 +3981,7 @@ function removeFunction(id) {
   return new Transition(subgroups, this._parents, name, id);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/selectAll.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/selectAll.js
 
 
 
@@ -4009,7 +4009,7 @@ function removeFunction(id) {
   return new Transition(subgroups, parents, name, id);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/selection.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/selection.js
 
 
 var selection_Selection = src_selection.prototype.constructor;
@@ -4018,7 +4018,7 @@ var selection_Selection = src_selection.prototype.constructor;
   return new selection_Selection(this._groups, this._parents);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/style.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/style.js
 
 
 
@@ -4100,7 +4100,7 @@ function styleMaybeRemove(id, name) {
       .on("end.style." + name, null);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/styleTween.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/styleTween.js
 function styleInterpolate(name, i, priority) {
   return function(t) {
     this.style.setProperty(name, i.call(this, t), priority);
@@ -4126,7 +4126,7 @@ function styleTween(name, value, priority) {
   return this.tween(key, styleTween(name, value, priority == null ? "" : priority));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/text.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/text.js
 
 
 function text_textConstant(value) {
@@ -4148,7 +4148,7 @@ function text_textFunction(value) {
       : text_textConstant(value == null ? "" : value + ""));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/textTween.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/textTween.js
 function textInterpolate(i) {
   return function(t) {
     this.textContent = i.call(this, t);
@@ -4174,7 +4174,7 @@ function textTween(value) {
   return this.tween(key, textTween(value));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/transition.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/transition.js
 
 
 
@@ -4200,7 +4200,7 @@ function textTween(value) {
   return new Transition(groups, this._parents, name, id1);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/end.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/end.js
 
 
 /* harmony default export */ var transition_end = (function() {
@@ -4228,7 +4228,7 @@ function textTween(value) {
   });
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/transition/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/transition/index.js
 
 
 
@@ -4298,7 +4298,7 @@ Transition.prototype = src_transition_transition.prototype = {
   end: transition_end
 };
 
-// CONCATENATED MODULE: ./node_modules/d3-ease/src/cubic.js
+// CONCATENATED MODULE: ./node_modules/_d3-ease@1.0.7@d3-ease/src/cubic.js
 function cubicIn(t) {
   return t * t * t;
 }
@@ -4311,7 +4311,7 @@ function cubicInOut(t) {
   return ((t *= 2) <= 1 ? t * t * t : (t -= 2) * t * t + 2) / 2;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/selection/transition.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/selection/transition.js
 
 
 
@@ -4355,7 +4355,7 @@ function transition_inherit(node, id) {
   return new Transition(groups, this._parents, name, id);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/selection/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/selection/index.js
 
 
 
@@ -4363,7 +4363,7 @@ function transition_inherit(node, id) {
 src_selection.prototype.interrupt = selection_interrupt;
 src_selection.prototype.transition = selection_transition;
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/active.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/active.js
 
 
 
@@ -4386,27 +4386,27 @@ var active_root = [null];
   return null;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-transition/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-transition@1.3.2@d3-transition/src/index.js
 
 
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/constant.js
-/* harmony default export */ var d3_brush_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-brush@1.1.6@d3-brush/src/constant.js
+/* harmony default export */ var _d3_brush_1_1_6_d3_brush_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/event.js
+// CONCATENATED MODULE: ./node_modules/_d3-brush@1.1.6@d3-brush/src/event.js
 /* harmony default export */ var src_event = (function(target, type, selection) {
   this.target = target;
   this.type = type;
   this.selection = selection;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/noevent.js
+// CONCATENATED MODULE: ./node_modules/_d3-brush@1.1.6@d3-brush/src/noevent.js
 
 
 function noevent_nopropagation() {
@@ -4418,7 +4418,7 @@ function noevent_nopropagation() {
   on_event.stopImmediatePropagation();
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/brush.js
+// CONCATENATED MODULE: ./node_modules/_d3-brush@1.1.6@d3-brush/src/brush.js
 
 
 
@@ -4709,14 +4709,16 @@ function brush_brush(dim) {
   }
 
   function emitter(that, args, clean) {
-    return (!clean && that.__brush.emitter) || new Emitter(that, args);
+    var emit = that.__brush.emitter;
+    return emit && (!clean || !emit.clean) ? emit : new Emitter(that, args, clean);
   }
 
-  function Emitter(that, args) {
+  function Emitter(that, args, clean) {
     this.that = that;
     this.args = args;
     this.state = that.__brush;
     this.active = 0;
+    this.clean = clean;
   }
 
   Emitter.prototype = {
@@ -4982,15 +4984,15 @@ function brush_brush(dim) {
   }
 
   brush.extent = function(_) {
-    return arguments.length ? (extent = typeof _ === "function" ? _ : d3_brush_src_constant(number2(_)), brush) : extent;
+    return arguments.length ? (extent = typeof _ === "function" ? _ : _d3_brush_1_1_6_d3_brush_src_constant(number2(_)), brush) : extent;
   };
 
   brush.filter = function(_) {
-    return arguments.length ? (filter = typeof _ === "function" ? _ : d3_brush_src_constant(!!_), brush) : filter;
+    return arguments.length ? (filter = typeof _ === "function" ? _ : _d3_brush_1_1_6_d3_brush_src_constant(!!_), brush) : filter;
   };
 
   brush.touchable = function(_) {
-    return arguments.length ? (touchable = typeof _ === "function" ? _ : d3_brush_src_constant(!!_), brush) : touchable;
+    return arguments.length ? (touchable = typeof _ === "function" ? _ : _d3_brush_1_1_6_d3_brush_src_constant(!!_), brush) : touchable;
   };
 
   brush.handleSize = function(_) {
@@ -5009,10 +5011,10 @@ function brush_brush(dim) {
   return brush;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-brush/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-brush@1.1.6@d3-brush/src/index.js
 
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/math.js
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/math.js
 var cos = Math.cos;
 var sin = Math.sin;
 var pi = Math.PI;
@@ -5020,7 +5022,7 @@ var halfPi = pi / 2;
 var tau = pi * 2;
 var math_max = Math.max;
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/chord.js
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/chord.js
 
 
 
@@ -5143,17 +5145,17 @@ function compareValue(compare) {
   return chord;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/array.js
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/array.js
 var src_array_slice = Array.prototype.slice;
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/constant.js
-/* harmony default export */ var d3_chord_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/constant.js
+/* harmony default export */ var _d3_chord_1_0_6_d3_chord_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-path/src/path.js
+// CONCATENATED MODULE: ./node_modules/_d3-path@1.0.9@d3-path/src/path.js
 var path_pi = Math.PI,
     path_tau = 2 * path_pi,
     path_epsilon = 1e-6,
@@ -5285,7 +5287,7 @@ Path.prototype = path_path.prototype = {
 
 /* harmony default export */ var src_path = (path_path);
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/ribbon.js
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/ribbon.js
 
 
 
@@ -5348,15 +5350,15 @@ function defaultEndAngle(d) {
   }
 
   ribbon.radius = function(_) {
-    return arguments.length ? (radius = typeof _ === "function" ? _ : d3_chord_src_constant(+_), ribbon) : radius;
+    return arguments.length ? (radius = typeof _ === "function" ? _ : _d3_chord_1_0_6_d3_chord_src_constant(+_), ribbon) : radius;
   };
 
   ribbon.startAngle = function(_) {
-    return arguments.length ? (startAngle = typeof _ === "function" ? _ : d3_chord_src_constant(+_), ribbon) : startAngle;
+    return arguments.length ? (startAngle = typeof _ === "function" ? _ : _d3_chord_1_0_6_d3_chord_src_constant(+_), ribbon) : startAngle;
   };
 
   ribbon.endAngle = function(_) {
-    return arguments.length ? (endAngle = typeof _ === "function" ? _ : d3_chord_src_constant(+_), ribbon) : endAngle;
+    return arguments.length ? (endAngle = typeof _ === "function" ? _ : _d3_chord_1_0_6_d3_chord_src_constant(+_), ribbon) : endAngle;
   };
 
   ribbon.source = function(_) {
@@ -5374,11 +5376,11 @@ function defaultEndAngle(d) {
   return ribbon;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-chord/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-chord@1.0.6@d3-chord/src/index.js
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/map.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/map.js
 var map_prefix = "$";
 
 function Map() {}
@@ -5455,7 +5457,7 @@ function map_map(object, f) {
 
 /* harmony default export */ var src_map = (map_map);
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/nest.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/nest.js
 
 
 /* harmony default export */ var src_nest = (function() {
@@ -5530,7 +5532,7 @@ function setMap(map, key, value) {
   map.set(key, value);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/set.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/set.js
 
 
 function Set() {}
@@ -5571,28 +5573,28 @@ function set_set(object, f) {
 
 /* harmony default export */ var src_set = (set_set);
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/keys.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/keys.js
 /* harmony default export */ var src_keys = (function(map) {
   var keys = [];
   for (var key in map) keys.push(key);
   return keys;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/values.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/values.js
 /* harmony default export */ var src_values = (function(map) {
   var values = [];
   for (var key in map) values.push(map[key]);
   return values;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/entries.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/entries.js
 /* harmony default export */ var src_entries = (function(map) {
   var entries = [];
   for (var key in map) entries.push({key: key, value: map[key]});
   return entries;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-collection/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-collection@1.0.7@d3-collection/src/index.js
 
 
 
@@ -5600,31 +5602,31 @@ function set_set(object, f) {
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/array.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/array.js
 var src_array_array = Array.prototype;
 
-var d3_contour_src_array_slice = src_array_array.slice;
+var _d3_contour_1_3_2_d3_contour_src_array_slice = src_array_array.slice;
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/ascending.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/ascending.js
 /* harmony default export */ var src_ascending = (function(a, b) {
   return a - b;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/area.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/area.js
 /* harmony default export */ var src_area = (function(ring) {
   var i = 0, n = ring.length, area = ring[n - 1][1] * ring[0][0] - ring[n - 1][0] * ring[0][1];
   while (++i < n) area += ring[i - 1][1] * ring[i][0] - ring[i - 1][0] * ring[i][1];
   return area;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/constant.js
-/* harmony default export */ var d3_contour_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/constant.js
+/* harmony default export */ var _d3_contour_1_3_2_d3_contour_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/contains.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/contains.js
 /* harmony default export */ var contains = (function(ring, hole) {
   var i = -1, n = hole.length, c;
   while (++i < n) if (c = ringContains(ring, hole[i])) return c;
@@ -5653,10 +5655,10 @@ function within(p, q, r) {
   return p <= q && q <= r || r <= q && q <= p;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/noop.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/noop.js
 /* harmony default export */ var src_noop = (function() {});
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/contours.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/contours.js
 
 
 
@@ -5851,7 +5853,7 @@ var cases = [
   };
 
   contours.thresholds = function(_) {
-    return arguments.length ? (threshold = typeof _ === "function" ? _ : Array.isArray(_) ? d3_contour_src_constant(d3_contour_src_array_slice.call(_)) : d3_contour_src_constant(_), contours) : threshold;
+    return arguments.length ? (threshold = typeof _ === "function" ? _ : Array.isArray(_) ? _d3_contour_1_3_2_d3_contour_src_constant(_d3_contour_1_3_2_d3_contour_src_array_slice.call(_)) : _d3_contour_1_3_2_d3_contour_src_constant(_), contours) : threshold;
   };
 
   contours.smooth = function(_) {
@@ -5861,7 +5863,7 @@ var cases = [
   return contours;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/blur.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/blur.js
 // TODO Optimize edge cases.
 // TODO Optimize index calculation.
 // TODO Optimize arguments.
@@ -5906,7 +5908,7 @@ function blurY(source, target, r) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/density.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/density.js
 
 
 
@@ -5936,7 +5938,7 @@ function defaultWeight() {
       o = r * 3, // grid offset, to pad for blur
       n = (dx + o * 2) >> k, // grid width
       m = (dy + o * 2) >> k, // grid height
-      threshold = d3_contour_src_constant(20);
+      threshold = _d3_contour_1_3_2_d3_contour_src_constant(20);
 
   function density(data) {
     var values0 = new Float32Array(n * m),
@@ -6004,15 +6006,15 @@ function defaultWeight() {
   }
 
   density.x = function(_) {
-    return arguments.length ? (x = typeof _ === "function" ? _ : d3_contour_src_constant(+_), density) : x;
+    return arguments.length ? (x = typeof _ === "function" ? _ : _d3_contour_1_3_2_d3_contour_src_constant(+_), density) : x;
   };
 
   density.y = function(_) {
-    return arguments.length ? (y = typeof _ === "function" ? _ : d3_contour_src_constant(+_), density) : y;
+    return arguments.length ? (y = typeof _ === "function" ? _ : _d3_contour_1_3_2_d3_contour_src_constant(+_), density) : y;
   };
 
   density.weight = function(_) {
-    return arguments.length ? (weight = typeof _ === "function" ? _ : d3_contour_src_constant(+_), density) : weight;
+    return arguments.length ? (weight = typeof _ === "function" ? _ : _d3_contour_1_3_2_d3_contour_src_constant(+_), density) : weight;
   };
 
   density.size = function(_) {
@@ -6029,7 +6031,7 @@ function defaultWeight() {
   };
 
   density.thresholds = function(_) {
-    return arguments.length ? (threshold = typeof _ === "function" ? _ : Array.isArray(_) ? d3_contour_src_constant(d3_contour_src_array_slice.call(_)) : d3_contour_src_constant(_), density) : threshold;
+    return arguments.length ? (threshold = typeof _ === "function" ? _ : Array.isArray(_) ? _d3_contour_1_3_2_d3_contour_src_constant(_d3_contour_1_3_2_d3_contour_src_array_slice.call(_)) : _d3_contour_1_3_2_d3_contour_src_constant(_), density) : threshold;
   };
 
   density.bandwidth = function(_) {
@@ -6041,11 +6043,11 @@ function defaultWeight() {
   return density;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-contour/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-contour@1.3.2@d3-contour/src/index.js
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/center.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/center.js
 /* harmony default export */ var src_center = (function(x, y) {
   var nodes;
 
@@ -6083,19 +6085,19 @@ function defaultWeight() {
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/constant.js
-/* harmony default export */ var d3_force_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/constant.js
+/* harmony default export */ var _d3_force_1_2_1_d3_force_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/jiggle.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/jiggle.js
 /* harmony default export */ var jiggle = (function() {
   return (Math.random() - 0.5) * 1e-6;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/add.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/add.js
 /* harmony default export */ var add = (function(d) {
   var x = +this._x.call(null, d),
       y = +this._y.call(null, d);
@@ -6181,7 +6183,7 @@ function addAll(data) {
   return this;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/cover.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/cover.js
 /* harmony default export */ var src_cover = (function(x, y) {
   if (isNaN(x = +x) || isNaN(y = +y)) return this; // ignore invalid points
 
@@ -6226,7 +6228,7 @@ function addAll(data) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/data.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/data.js
 /* harmony default export */ var src_data = (function() {
   var data = [];
   this.visit(function(node) {
@@ -6235,14 +6237,14 @@ function addAll(data) {
   return data;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/extent.js
-/* harmony default export */ var d3_quadtree_src_extent = (function(_) {
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/extent.js
+/* harmony default export */ var _d3_quadtree_1_0_7_d3_quadtree_src_extent = (function(_) {
   return arguments.length
       ? this.cover(+_[0][0], +_[0][1]).cover(+_[1][0], +_[1][1])
       : isNaN(this._x0) ? undefined : [[this._x0, this._y0], [this._x1, this._y1]];
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/quad.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/quad.js
 /* harmony default export */ var src_quad = (function(node, x0, y0, x1, y1) {
   this.node = node;
   this.x0 = x0;
@@ -6251,7 +6253,7 @@ function addAll(data) {
   this.y1 = y1;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/find.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/find.js
 
 
 /* harmony default export */ var find = (function(x, y, radius) {
@@ -6323,7 +6325,7 @@ function addAll(data) {
   return data;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/remove.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/remove.js
 /* harmony default export */ var src_remove = (function(d) {
   if (isNaN(x = +this._x.call(null, d)) || isNaN(y = +this._y.call(null, d))) return this; // ignore invalid points
 
@@ -6387,12 +6389,12 @@ function removeAll(data) {
   return this;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/root.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/root.js
 /* harmony default export */ var src_root = (function() {
   return this._root;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/size.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/size.js
 /* harmony default export */ var src_size = (function() {
   var size = 0;
   this.visit(function(node) {
@@ -6401,7 +6403,7 @@ function removeAll(data) {
   return size;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/visit.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/visit.js
 
 
 /* harmony default export */ var visit = (function(callback) {
@@ -6419,7 +6421,7 @@ function removeAll(data) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/visitAfter.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/visitAfter.js
 
 
 /* harmony default export */ var visitAfter = (function(callback) {
@@ -6442,7 +6444,7 @@ function removeAll(data) {
   return this;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/x.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/x.js
 function x_defaultX(d) {
   return d[0];
 }
@@ -6451,7 +6453,7 @@ function x_defaultX(d) {
   return arguments.length ? (this._x = _, this) : this._x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/y.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/y.js
 function y_defaultY(d) {
   return d[1];
 }
@@ -6460,7 +6462,7 @@ function y_defaultY(d) {
   return arguments.length ? (this._y = _, this) : this._y;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-quadtree/src/quadtree.js
+// CONCATENATED MODULE: ./node_modules/_d3-quadtree@1.0.7@d3-quadtree/src/quadtree.js
 
 
 
@@ -6524,7 +6526,7 @@ treeProto.add = add;
 treeProto.addAll = addAll;
 treeProto.cover = src_cover;
 treeProto.data = src_data;
-treeProto.extent = d3_quadtree_src_extent;
+treeProto.extent = _d3_quadtree_1_0_7_d3_quadtree_src_extent;
 treeProto.find = find;
 treeProto.remove = src_remove;
 treeProto.removeAll = removeAll;
@@ -6535,7 +6537,7 @@ treeProto.visitAfter = visitAfter;
 treeProto.x = src_x;
 treeProto.y = src_y;
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/collide.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/collide.js
 
 
 
@@ -6554,7 +6556,7 @@ function collide_y(d) {
       strength = 1,
       iterations = 1;
 
-  if (typeof radius !== "function") radius = d3_force_src_constant(radius == null ? 1 : +radius);
+  if (typeof radius !== "function") radius = _d3_force_1_2_1_d3_force_src_constant(radius == null ? 1 : +radius);
 
   function force() {
     var i, n = nodes.length,
@@ -6629,13 +6631,13 @@ function collide_y(d) {
   };
 
   force.radius = function(_) {
-    return arguments.length ? (radius = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : radius;
+    return arguments.length ? (radius = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : radius;
   };
 
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/link.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/link.js
 
 
 
@@ -6654,7 +6656,7 @@ function link_find(nodeById, nodeId) {
   var id = link_index,
       strength = defaultStrength,
       strengths,
-      distance = d3_force_src_constant(30),
+      distance = _d3_force_1_2_1_d3_force_src_constant(30),
       distances,
       nodes,
       count,
@@ -6743,17 +6745,17 @@ function link_find(nodeById, nodeId) {
   };
 
   force.strength = function(_) {
-    return arguments.length ? (strength = typeof _ === "function" ? _ : d3_force_src_constant(+_), initializeStrength(), force) : strength;
+    return arguments.length ? (strength = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initializeStrength(), force) : strength;
   };
 
   force.distance = function(_) {
-    return arguments.length ? (distance = typeof _ === "function" ? _ : d3_force_src_constant(+_), initializeDistance(), force) : distance;
+    return arguments.length ? (distance = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initializeDistance(), force) : distance;
   };
 
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/simulation.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/simulation.js
 
 
 
@@ -6906,7 +6908,7 @@ var initialRadius = 10,
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/manyBody.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/manyBody.js
 
 
 
@@ -6916,7 +6918,7 @@ var initialRadius = 10,
   var nodes,
       node,
       alpha,
-      strength = d3_force_src_constant(-30),
+      strength = _d3_force_1_2_1_d3_force_src_constant(-30),
       strengths,
       distanceMin2 = 1,
       distanceMax2 = Infinity,
@@ -7004,7 +7006,7 @@ var initialRadius = 10,
   };
 
   force.strength = function(_) {
-    return arguments.length ? (strength = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : strength;
+    return arguments.length ? (strength = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : strength;
   };
 
   force.distanceMin = function(_) {
@@ -7022,16 +7024,16 @@ var initialRadius = 10,
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/radial.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/radial.js
 
 
 /* harmony default export */ var radial = (function(radius, x, y) {
   var nodes,
-      strength = d3_force_src_constant(0.1),
+      strength = _d3_force_1_2_1_d3_force_src_constant(0.1),
       strengths,
       radiuses;
 
-  if (typeof radius !== "function") radius = d3_force_src_constant(+radius);
+  if (typeof radius !== "function") radius = _d3_force_1_2_1_d3_force_src_constant(+radius);
   if (x == null) x = 0;
   if (y == null) y = 0;
 
@@ -7063,11 +7065,11 @@ var initialRadius = 10,
   };
 
   force.strength = function(_) {
-    return arguments.length ? (strength = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : strength;
+    return arguments.length ? (strength = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : strength;
   };
 
   force.radius = function(_) {
-    return arguments.length ? (radius = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : radius;
+    return arguments.length ? (radius = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : radius;
   };
 
   force.x = function(_) {
@@ -7081,16 +7083,16 @@ var initialRadius = 10,
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/x.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/x.js
 
 
-/* harmony default export */ var d3_force_src_x = (function(x) {
-  var strength = d3_force_src_constant(0.1),
+/* harmony default export */ var _d3_force_1_2_1_d3_force_src_x = (function(x) {
+  var strength = _d3_force_1_2_1_d3_force_src_constant(0.1),
       nodes,
       strengths,
       xz;
 
-  if (typeof x !== "function") x = d3_force_src_constant(x == null ? 0 : +x);
+  if (typeof x !== "function") x = _d3_force_1_2_1_d3_force_src_constant(x == null ? 0 : +x);
 
   function force(alpha) {
     for (var i = 0, n = nodes.length, node; i < n; ++i) {
@@ -7114,26 +7116,26 @@ var initialRadius = 10,
   };
 
   force.strength = function(_) {
-    return arguments.length ? (strength = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : strength;
+    return arguments.length ? (strength = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : strength;
   };
 
   force.x = function(_) {
-    return arguments.length ? (x = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : x;
+    return arguments.length ? (x = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : x;
   };
 
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/y.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/y.js
 
 
-/* harmony default export */ var d3_force_src_y = (function(y) {
-  var strength = d3_force_src_constant(0.1),
+/* harmony default export */ var _d3_force_1_2_1_d3_force_src_y = (function(y) {
+  var strength = _d3_force_1_2_1_d3_force_src_constant(0.1),
       nodes,
       strengths,
       yz;
 
-  if (typeof y !== "function") y = d3_force_src_constant(y == null ? 0 : +y);
+  if (typeof y !== "function") y = _d3_force_1_2_1_d3_force_src_constant(y == null ? 0 : +y);
 
   function force(alpha) {
     for (var i = 0, n = nodes.length, node; i < n; ++i) {
@@ -7157,17 +7159,17 @@ var initialRadius = 10,
   };
 
   force.strength = function(_) {
-    return arguments.length ? (strength = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : strength;
+    return arguments.length ? (strength = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : strength;
   };
 
   force.y = function(_) {
-    return arguments.length ? (y = typeof _ === "function" ? _ : d3_force_src_constant(+_), initialize(), force) : y;
+    return arguments.length ? (y = typeof _ === "function" ? _ : _d3_force_1_2_1_d3_force_src_constant(+_), initialize(), force) : y;
   };
 
   return force;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-force/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-force@1.2.1@d3-force/src/index.js
 
 
 
@@ -7177,15 +7179,15 @@ var initialRadius = 10,
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-path/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-path@1.0.9@d3-path/src/index.js
 
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/defaultSource.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/defaultSource.js
 /* harmony default export */ var src_defaultSource = (function() {
   return Math.random();
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/uniform.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/uniform.js
 
 
 /* harmony default export */ var uniform = ((function sourceRandomUniform(source) {
@@ -7204,7 +7206,7 @@ var initialRadius = 10,
   return randomUniform;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/normal.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/normal.js
 
 
 /* harmony default export */ var normal = ((function sourceRandomNormal(source) {
@@ -7234,7 +7236,7 @@ var initialRadius = 10,
   return randomNormal;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/logNormal.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/logNormal.js
 
 
 
@@ -7251,7 +7253,7 @@ var initialRadius = 10,
   return randomLogNormal;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/irwinHall.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/irwinHall.js
 
 
 /* harmony default export */ var irwinHall = ((function sourceRandomIrwinHall(source) {
@@ -7267,7 +7269,7 @@ var initialRadius = 10,
   return randomIrwinHall;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/bates.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/bates.js
 
 
 
@@ -7284,7 +7286,7 @@ var initialRadius = 10,
   return randomBates;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/exponential.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/exponential.js
 
 
 /* harmony default export */ var src_exponential = ((function sourceRandomExponential(source) {
@@ -7299,7 +7301,7 @@ var initialRadius = 10,
   return randomExponential;
 })(src_defaultSource));
 
-// CONCATENATED MODULE: ./node_modules/d3-random/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-random@1.1.2@d3-random/src/index.js
 
 
 
@@ -7307,7 +7309,7 @@ var initialRadius = 10,
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/init.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/init.js
 function initRange(domain, range) {
   switch (arguments.length) {
     case 0: break;
@@ -7326,13 +7328,13 @@ function initInterpolator(domain, interpolator) {
   return this;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/array.js
-var d3_scale_src_array_array = Array.prototype;
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/array.js
+var _d3_scale_2_2_2_d3_scale_src_array_array = Array.prototype;
 
-var array_map = d3_scale_src_array_array.map;
-var d3_scale_src_array_slice = d3_scale_src_array_array.slice;
+var array_map = _d3_scale_2_2_2_d3_scale_src_array_array.map;
+var _d3_scale_2_2_2_d3_scale_src_array_slice = _d3_scale_2_2_2_d3_scale_src_array_array.slice;
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/ordinal.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/ordinal.js
 
 
 
@@ -7363,7 +7365,7 @@ function ordinal() {
   };
 
   scale.range = function(_) {
-    return arguments.length ? (range = d3_scale_src_array_slice.call(_), scale) : range.slice();
+    return arguments.length ? (range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), scale) : range.slice();
   };
 
   scale.unknown = function(_) {
@@ -7379,7 +7381,7 @@ function ordinal() {
   return scale;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/band.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/band.js
 
 
 
@@ -7481,26 +7483,26 @@ function band_point() {
   return pointish(band.apply(null, arguments).paddingInner(1));
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/round.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/round.js
 /* harmony default export */ var src_round = (function(a, b) {
   return a = +a, b = +b, function(t) {
     return Math.round(a * (1 - t) + b * t);
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/constant.js
-/* harmony default export */ var d3_scale_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/constant.js
+/* harmony default export */ var _d3_scale_2_2_2_d3_scale_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/number.js
-/* harmony default export */ var d3_scale_src_number = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/number.js
+/* harmony default export */ var _d3_scale_2_2_2_d3_scale_src_number = (function(x) {
   return +x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/continuous.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/continuous.js
 
 
 
@@ -7516,7 +7518,7 @@ function continuous_identity(x) {
 function normalize(a, b) {
   return (b -= (a = +a))
       ? function(x) { return (x - a) / b; }
-      : d3_scale_src_constant(isNaN(b) ? NaN : 0.5);
+      : _d3_scale_2_2_2_d3_scale_src_constant(isNaN(b) ? NaN : 0.5);
 }
 
 function clamper(domain) {
@@ -7593,15 +7595,15 @@ function transformer() {
   };
 
   scale.domain = function(_) {
-    return arguments.length ? (domain = array_map.call(_, d3_scale_src_number), clamp === continuous_identity || (clamp = clamper(domain)), rescale()) : domain.slice();
+    return arguments.length ? (domain = array_map.call(_, _d3_scale_2_2_2_d3_scale_src_number), clamp === continuous_identity || (clamp = clamper(domain)), rescale()) : domain.slice();
   };
 
   scale.range = function(_) {
-    return arguments.length ? (range = d3_scale_src_array_slice.call(_), rescale()) : range.slice();
+    return arguments.length ? (range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), rescale()) : range.slice();
   };
 
   scale.rangeRound = function(_) {
-    return range = d3_scale_src_array_slice.call(_), interpolate = src_round, rescale();
+    return range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), interpolate = src_round, rescale();
   };
 
   scale.clamp = function(_) {
@@ -7626,7 +7628,7 @@ function continuous(transform, untransform) {
   return transformer()(transform, untransform);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatSpecifier.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatSpecifier.js
 // [[fill]align][sign][symbol][0][width][,][.precision][~][type]
 var re = /^(?:(.)?([<>=^]))?([+\-( ])?([$#])?(0)?(\d+)?(,)?(\.\d+)?(~)?([a-z%])?$/i;
 
@@ -7675,11 +7677,17 @@ FormatSpecifier.prototype.toString = function() {
       + this.type;
 };
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatDecimal.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatDecimal.js
+/* harmony default export */ var formatDecimal = (function(x) {
+  return Math.abs(x = Math.round(x)) >= 1e21
+      ? x.toLocaleString("en").replace(/,/g, "")
+      : x.toString(10);
+});
+
 // Computes the decimal coefficient and exponent of the specified number x with
 // significant digits p, where x is positive and p is in [1, 21] or undefined.
-// For example, formatDecimal(1.23) returns ["123", 0].
-/* harmony default export */ var formatDecimal = (function(x, p) {
+// For example, formatDecimalParts(1.23) returns ["123", 0].
+function formatDecimalParts(x, p) {
   if ((i = (x = p ? x.toExponential(p - 1) : x.toExponential()).indexOf("e")) < 0) return null; // NaN, ±Infinity
   var i, coefficient = x.slice(0, i);
 
@@ -7689,23 +7697,23 @@ FormatSpecifier.prototype.toString = function() {
     coefficient.length > 1 ? coefficient[0] + coefficient.slice(2) : coefficient,
     +x.slice(i + 1)
   ];
-});
+}
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/exponent.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/exponent.js
 
 
 /* harmony default export */ var src_exponent = (function(x) {
-  return x = formatDecimal(Math.abs(x)), x ? x[1] : NaN;
+  return x = formatDecimalParts(Math.abs(x)), x ? x[1] : NaN;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/precisionPrefix.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/precisionPrefix.js
 
 
 /* harmony default export */ var precisionPrefix = (function(step, value) {
   return Math.max(0, Math.max(-8, Math.min(8, Math.floor(src_exponent(value) / 3))) * 3 - src_exponent(Math.abs(step)));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatGroup.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatGroup.js
 /* harmony default export */ var formatGroup = (function(grouping, thousands) {
   return function(value, width) {
     var i = value.length,
@@ -7725,7 +7733,7 @@ FormatSpecifier.prototype.toString = function() {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatNumerals.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatNumerals.js
 /* harmony default export */ var formatNumerals = (function(numerals) {
   return function(value) {
     return value.replace(/[0-9]/g, function(i) {
@@ -7734,7 +7742,7 @@ FormatSpecifier.prototype.toString = function() {
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatTrim.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatTrim.js
 // Trims insignificant zeros, e.g., replaces 1.2000k with 1.2k.
 /* harmony default export */ var formatTrim = (function(s) {
   out: for (var n = s.length, i = 1, i0 = -1, i1; i < n; ++i) {
@@ -7747,13 +7755,13 @@ FormatSpecifier.prototype.toString = function() {
   return i0 > 0 ? s.slice(0, i0) + s.slice(i1 + 1) : s;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatPrefixAuto.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatPrefixAuto.js
 
 
 var prefixExponent;
 
 /* harmony default export */ var formatPrefixAuto = (function(x, p) {
-  var d = formatDecimal(x, p);
+  var d = formatDecimalParts(x, p);
   if (!d) return x + "";
   var coefficient = d[0],
       exponent = d[1],
@@ -7762,14 +7770,14 @@ var prefixExponent;
   return i === n ? coefficient
       : i > n ? coefficient + new Array(i - n + 1).join("0")
       : i > 0 ? coefficient.slice(0, i) + "." + coefficient.slice(i)
-      : "0." + new Array(1 - i).join("0") + formatDecimal(x, Math.max(0, p + i - 1))[0]; // less than 1y!
+      : "0." + new Array(1 - i).join("0") + formatDecimalParts(x, Math.max(0, p + i - 1))[0]; // less than 1y!
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatRounded.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatRounded.js
 
 
 /* harmony default export */ var formatRounded = (function(x, p) {
-  var d = formatDecimal(x, p);
+  var d = formatDecimalParts(x, p);
   if (!d) return x + "";
   var coefficient = d[0],
       exponent = d[1];
@@ -7778,7 +7786,8 @@ var prefixExponent;
       : coefficient + new Array(exponent - coefficient.length + 2).join("0");
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/formatTypes.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/formatTypes.js
+
 
 
 
@@ -7786,7 +7795,7 @@ var prefixExponent;
   "%": function(x, p) { return (x * 100).toFixed(p); },
   "b": function(x) { return Math.round(x).toString(2); },
   "c": function(x) { return x + ""; },
-  "d": function(x) { return Math.round(x).toString(10); },
+  "d": formatDecimal,
   "e": function(x, p) { return x.toExponential(p); },
   "f": function(x, p) { return x.toFixed(p); },
   "g": function(x, p) { return x.toPrecision(p); },
@@ -7798,12 +7807,12 @@ var prefixExponent;
   "x": function(x) { return Math.round(x).toString(16); }
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/identity.js
-/* harmony default export */ var d3_format_src_identity = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/identity.js
+/* harmony default export */ var _d3_format_1_4_5_d3_format_src_identity = (function(x) {
   return x;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/locale.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/locale.js
 
 
 
@@ -7817,11 +7826,11 @@ var locale_map = Array.prototype.map,
     prefixes = ["y","z","a","f","p","n","µ","m","","k","M","G","T","P","E","Z","Y"];
 
 /* harmony default export */ var src_locale = (function(locale) {
-  var group = locale.grouping === undefined || locale.thousands === undefined ? d3_format_src_identity : formatGroup(locale_map.call(locale.grouping, Number), locale.thousands + ""),
+  var group = locale.grouping === undefined || locale.thousands === undefined ? _d3_format_1_4_5_d3_format_src_identity : formatGroup(locale_map.call(locale.grouping, Number), locale.thousands + ""),
       currencyPrefix = locale.currency === undefined ? "" : locale.currency[0] + "",
       currencySuffix = locale.currency === undefined ? "" : locale.currency[1] + "",
       decimal = locale.decimal === undefined ? "." : locale.decimal + "",
-      numerals = locale.numerals === undefined ? d3_format_src_identity : formatNumerals(locale_map.call(locale.numerals, String)),
+      numerals = locale.numerals === undefined ? _d3_format_1_4_5_d3_format_src_identity : formatNumerals(locale_map.call(locale.numerals, String)),
       percent = locale.percent === undefined ? "%" : locale.percent + "",
       minus = locale.minus === undefined ? "-" : locale.minus + "",
       nan = locale.nan === undefined ? "NaN" : locale.nan + "";
@@ -7953,7 +7962,7 @@ var locale_map = Array.prototype.map,
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/defaultLocale.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/defaultLocale.js
 
 
 var defaultLocale_locale;
@@ -7975,7 +7984,7 @@ function defaultLocale(definition) {
   return defaultLocale_locale;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/precisionRound.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/precisionRound.js
 
 
 /* harmony default export */ var precisionRound = (function(step, max) {
@@ -7983,14 +7992,14 @@ function defaultLocale(definition) {
   return Math.max(0, src_exponent(max) - src_exponent(step)) + 1;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-format/src/precisionFixed.js
+// CONCATENATED MODULE: ./node_modules/_d3-format@1.4.5@d3-format/src/precisionFixed.js
 
 
 /* harmony default export */ var precisionFixed = (function(step) {
   return Math.max(0, -src_exponent(Math.abs(step)));
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/tickFormat.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/tickFormat.js
 
 
 
@@ -8021,7 +8030,7 @@ function defaultLocale(definition) {
   return defaultLocale_format(specifier);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/linear.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/linear.js
 
 
 
@@ -8095,7 +8104,7 @@ function linear_linear() {
   return linearish(scale);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/identity.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/identity.js
 
 
 
@@ -8110,7 +8119,7 @@ function identity_identity(domain) {
   scale.invert = scale;
 
   scale.domain = scale.range = function(_) {
-    return arguments.length ? (domain = array_map.call(_, d3_scale_src_number), scale) : domain.slice();
+    return arguments.length ? (domain = array_map.call(_, _d3_scale_2_2_2_d3_scale_src_number), scale) : domain.slice();
   };
 
   scale.unknown = function(_) {
@@ -8121,12 +8130,12 @@ function identity_identity(domain) {
     return identity_identity(domain).unknown(unknown);
   };
 
-  domain = arguments.length ? array_map.call(domain, d3_scale_src_number) : [0, 1];
+  domain = arguments.length ? array_map.call(domain, _d3_scale_2_2_2_d3_scale_src_number) : [0, 1];
 
   return linearish(scale);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/nice.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/nice.js
 /* harmony default export */ var nice = (function(domain, interval) {
   domain = domain.slice();
 
@@ -8146,7 +8155,7 @@ function identity_identity(domain) {
   return domain;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/log.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/log.js
 
 
 
@@ -8293,7 +8302,7 @@ function log() {
   return scale;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/symlog.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/symlog.js
 
 
 
@@ -8330,7 +8339,7 @@ function symlog() {
   return initRange.apply(scale, arguments);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/pow.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/pow.js
 
 
 
@@ -8382,7 +8391,7 @@ function sqrt() {
   return pow.apply(null, arguments).exponent(0.5);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/quantile.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/quantile.js
 
 
 
@@ -8421,7 +8430,7 @@ function quantile_quantile() {
   };
 
   scale.range = function(_) {
-    return arguments.length ? (range = d3_scale_src_array_slice.call(_), rescale()) : range.slice();
+    return arguments.length ? (range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), rescale()) : range.slice();
   };
 
   scale.unknown = function(_) {
@@ -8442,7 +8451,7 @@ function quantile_quantile() {
   return initRange.apply(scale, arguments);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/quantize.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/quantize.js
 
 
 
@@ -8472,7 +8481,7 @@ function quantize() {
   };
 
   scale.range = function(_) {
-    return arguments.length ? (n = (range = d3_scale_src_array_slice.call(_)).length - 1, rescale()) : range.slice();
+    return arguments.length ? (n = (range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_)).length - 1, rescale()) : range.slice();
   };
 
   scale.invertExtent = function(y) {
@@ -8501,7 +8510,7 @@ function quantize() {
   return initRange.apply(linearish(scale), arguments);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/threshold.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/threshold.js
 
 
 
@@ -8517,11 +8526,11 @@ function threshold_threshold() {
   }
 
   scale.domain = function(_) {
-    return arguments.length ? (domain = d3_scale_src_array_slice.call(_), n = Math.min(domain.length, range.length - 1), scale) : domain.slice();
+    return arguments.length ? (domain = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), n = Math.min(domain.length, range.length - 1), scale) : domain.slice();
   };
 
   scale.range = function(_) {
-    return arguments.length ? (range = d3_scale_src_array_slice.call(_), n = Math.min(domain.length, range.length - 1), scale) : range.slice();
+    return arguments.length ? (range = _d3_scale_2_2_2_d3_scale_src_array_slice.call(_), n = Math.min(domain.length, range.length - 1), scale) : range.slice();
   };
 
   scale.invertExtent = function(y) {
@@ -8543,7 +8552,7 @@ function threshold_threshold() {
   return initRange.apply(scale, arguments);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/interval.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/interval.js
 var interval_t0 = new Date,
     interval_t1 = new Date;
 
@@ -8615,7 +8624,7 @@ function newInterval(floori, offseti, count, field) {
   return interval;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/year.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/year.js
 
 
 var year_year = newInterval(function(date) {
@@ -8643,7 +8652,7 @@ year_year.every = function(k) {
 /* harmony default export */ var src_year = (year_year);
 var years = year_year.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/month.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/month.js
 
 
 var month_month = newInterval(function(date) {
@@ -8660,14 +8669,14 @@ var month_month = newInterval(function(date) {
 /* harmony default export */ var src_month = (month_month);
 var months = month_month.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/duration.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/duration.js
 var durationSecond = 1e3;
 var durationMinute = 6e4;
 var durationHour = 36e5;
 var durationDay = 864e5;
 var durationWeek = 6048e5;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/week.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/week.js
 
 
 
@@ -8698,7 +8707,7 @@ var thursdays = thursday.range;
 var fridays = friday.range;
 var saturdays = saturday.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/day.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/day.js
 
 
 
@@ -8715,7 +8724,7 @@ var day_day = newInterval(function(date) {
 /* harmony default export */ var src_day = (day_day);
 var days = day_day.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/hour.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/hour.js
 
 
 
@@ -8732,7 +8741,7 @@ var hour_hour = newInterval(function(date) {
 /* harmony default export */ var src_hour = (hour_hour);
 var hours = hour_hour.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/minute.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/minute.js
 
 
 
@@ -8749,7 +8758,7 @@ var minute_minute = newInterval(function(date) {
 /* harmony default export */ var src_minute = (minute_minute);
 var minutes = minute_minute.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/second.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/second.js
 
 
 
@@ -8766,7 +8775,7 @@ var second_second = newInterval(function(date) {
 /* harmony default export */ var src_second = (second_second);
 var seconds = second_second.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/millisecond.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/millisecond.js
 
 
 var millisecond_millisecond = newInterval(function() {
@@ -8794,7 +8803,7 @@ millisecond_millisecond.every = function(k) {
 /* harmony default export */ var src_millisecond = (millisecond_millisecond);
 var milliseconds = millisecond_millisecond.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcWeek.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcWeek.js
 
 
 
@@ -8825,7 +8834,7 @@ var utcThursdays = utcThursday.range;
 var utcFridays = utcFriday.range;
 var utcSaturdays = utcSaturday.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcDay.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcDay.js
 
 
 
@@ -8842,7 +8851,7 @@ var utcDay = newInterval(function(date) {
 /* harmony default export */ var src_utcDay = (utcDay);
 var utcDays = utcDay.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcYear.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcYear.js
 
 
 var utcYear = newInterval(function(date) {
@@ -8870,7 +8879,7 @@ utcYear.every = function(k) {
 /* harmony default export */ var src_utcYear = (utcYear);
 var utcYears = utcYear.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time-format/src/locale.js
+// CONCATENATED MODULE: ./node_modules/_d3-time-format@2.3.0@d3-time-format/src/locale.js
 
 
 function localDate(d) {
@@ -8925,6 +8934,8 @@ function formatLocale(locale) {
     "d": formatDayOfMonth,
     "e": formatDayOfMonth,
     "f": formatMicroseconds,
+    "g": formatYearISO,
+    "G": formatFullYearISO,
     "H": formatHour24,
     "I": formatHour12,
     "j": formatDayOfYear,
@@ -8958,6 +8969,8 @@ function formatLocale(locale) {
     "d": formatUTCDayOfMonth,
     "e": formatUTCDayOfMonth,
     "f": formatUTCMicroseconds,
+    "g": formatUTCYearISO,
+    "G": formatUTCFullYearISO,
     "H": formatUTCHour24,
     "I": formatUTCHour12,
     "j": formatUTCDayOfYear,
@@ -8991,6 +9004,8 @@ function formatLocale(locale) {
     "d": parseDayOfMonth,
     "e": parseDayOfMonth,
     "f": parseMicroseconds,
+    "g": parseYear,
+    "G": parseFullYear,
     "H": parseHour24,
     "I": parseHour24,
     "j": parseDayOfYear,
@@ -9412,9 +9427,13 @@ function formatWeekNumberSunday(d, p) {
   return pad(sunday.count(src_year(d) - 1, d), p, 2);
 }
 
-function formatWeekNumberISO(d, p) {
+function dISO(d) {
   var day = d.getDay();
-  d = (day >= 4 || day === 0) ? thursday(d) : thursday.ceil(d);
+  return (day >= 4 || day === 0) ? thursday(d) : thursday.ceil(d);
+}
+
+function formatWeekNumberISO(d, p) {
+  d = dISO(d);
   return pad(thursday.count(src_year(d), d) + (src_year(d).getDay() === 4), p, 2);
 }
 
@@ -9430,7 +9449,18 @@ function locale_formatYear(d, p) {
   return pad(d.getFullYear() % 100, p, 2);
 }
 
+function formatYearISO(d, p) {
+  d = dISO(d);
+  return pad(d.getFullYear() % 100, p, 2);
+}
+
 function formatFullYear(d, p) {
+  return pad(d.getFullYear() % 10000, p, 4);
+}
+
+function formatFullYearISO(d, p) {
+  var day = d.getDay();
+  d = (day >= 4 || day === 0) ? thursday(d) : thursday.ceil(d);
   return pad(d.getFullYear() % 10000, p, 4);
 }
 
@@ -9486,9 +9516,13 @@ function formatUTCWeekNumberSunday(d, p) {
   return pad(utcSunday.count(src_utcYear(d) - 1, d), p, 2);
 }
 
-function formatUTCWeekNumberISO(d, p) {
+function UTCdISO(d) {
   var day = d.getUTCDay();
-  d = (day >= 4 || day === 0) ? utcThursday(d) : utcThursday.ceil(d);
+  return (day >= 4 || day === 0) ? utcThursday(d) : utcThursday.ceil(d);
+}
+
+function formatUTCWeekNumberISO(d, p) {
+  d = UTCdISO(d);
   return pad(utcThursday.count(src_utcYear(d), d) + (src_utcYear(d).getUTCDay() === 4), p, 2);
 }
 
@@ -9504,7 +9538,18 @@ function formatUTCYear(d, p) {
   return pad(d.getUTCFullYear() % 100, p, 2);
 }
 
+function formatUTCYearISO(d, p) {
+  d = UTCdISO(d);
+  return pad(d.getUTCFullYear() % 100, p, 2);
+}
+
 function formatUTCFullYear(d, p) {
+  return pad(d.getUTCFullYear() % 10000, p, 4);
+}
+
+function formatUTCFullYearISO(d, p) {
+  var day = d.getUTCDay();
+  d = (day >= 4 || day === 0) ? utcThursday(d) : utcThursday.ceil(d);
   return pad(d.getUTCFullYear() % 10000, p, 4);
 }
 
@@ -9524,7 +9569,7 @@ function formatUnixTimestampSeconds(d) {
   return Math.floor(+d / 1000);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-time-format/src/defaultLocale.js
+// CONCATENATED MODULE: ./node_modules/_d3-time-format@2.3.0@d3-time-format/src/defaultLocale.js
 
 
 var src_defaultLocale_locale;
@@ -9553,7 +9598,7 @@ function defaultLocale_defaultLocale(definition) {
   return src_defaultLocale_locale;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/time.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/time.js
 
 
 
@@ -9690,7 +9735,7 @@ function calendar(year, month, week, day, hour, minute, second, millisecond, for
   return initRange.apply(calendar(src_year, src_month, sunday, src_day, src_hour, src_minute, src_second, src_millisecond, timeFormat).domain([new Date(2000, 0, 1), new Date(2000, 0, 2)]), arguments);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcMonth.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcMonth.js
 
 
 var utcMonth = newInterval(function(date) {
@@ -9707,7 +9752,7 @@ var utcMonth = newInterval(function(date) {
 /* harmony default export */ var src_utcMonth = (utcMonth);
 var utcMonths = utcMonth.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcHour.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcHour.js
 
 
 
@@ -9724,7 +9769,7 @@ var utcHour = newInterval(function(date) {
 /* harmony default export */ var src_utcHour = (utcHour);
 var utcHours = utcHour.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-time/src/utcMinute.js
+// CONCATENATED MODULE: ./node_modules/_d3-time@1.1.0@d3-time/src/utcMinute.js
 
 
 
@@ -9741,7 +9786,7 @@ var utcMinute = newInterval(function(date) {
 /* harmony default export */ var src_utcMinute = (utcMinute);
 var utcMinutes = utcMinute.range;
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/utcTime.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/utcTime.js
 
 
 
@@ -9751,7 +9796,7 @@ var utcMinutes = utcMinute.range;
   return initRange.apply(calendar(src_utcYear, src_utcMonth, utcSunday, src_utcDay, src_utcHour, src_utcMinute, src_second, src_millisecond, utcFormat).domain([Date.UTC(2000, 0, 1), Date.UTC(2000, 0, 2)]), arguments);
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/sequential.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/sequential.js
 
 
 
@@ -9848,7 +9893,7 @@ function sequentialSqrt() {
   return sequentialPow.apply(null, arguments).exponent(0.5);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/sequentialQuantile.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/sequentialQuantile.js
 
 
 
@@ -9880,7 +9925,7 @@ function sequentialQuantile() {
   return initInterpolator.apply(scale, arguments);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/diverging.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/diverging.js
 
 
 
@@ -9973,7 +10018,7 @@ function divergingSqrt() {
   return divergingPow.apply(null, arguments).exponent(0.5);
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-scale/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-scale@2.2.2@d3-scale/src/index.js
 
 
 
@@ -10006,7 +10051,7 @@ function divergingSqrt() {
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-selection/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-selection@1.4.2@d3-selection/src/index.js
 
 
 
@@ -10026,14 +10071,14 @@ function divergingSqrt() {
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/constant.js
-/* harmony default export */ var d3_voronoi_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/constant.js
+/* harmony default export */ var _d3_voronoi_1_1_4_d3_voronoi_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/point.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/point.js
 function point_x(d) {
   return d[0];
 }
@@ -10042,7 +10087,7 @@ function point_y(d) {
   return d[1];
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/RedBlackTree.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/RedBlackTree.js
 function RedBlackTree() {
   this._ = null; // root node
 }
@@ -10281,7 +10326,7 @@ function RedBlackFirst(node) {
 
 /* harmony default export */ var src_RedBlackTree = (RedBlackTree);
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/Edge.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/Edge.js
 
 
 function createEdge(left, right, v0, v1) {
@@ -10451,7 +10496,7 @@ function clipEdges(x0, y0, x1, y1) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/Cell.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/Cell.js
 
 
 
@@ -10579,7 +10624,7 @@ function clipCells(x0, y0, x1, y1) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/Circle.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/Circle.js
 
 
 
@@ -10659,7 +10704,7 @@ function detachCircle(arc) {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/Beach.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/Beach.js
 
 
 
@@ -10854,7 +10899,7 @@ function rightBreakPoint(arc, directrix) {
   return site[1] === directrix ? site[0] : Infinity;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/Diagram.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/Diagram.js
 
 
 
@@ -10998,7 +11043,7 @@ Diagram.prototype = {
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/voronoi.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/voronoi.js
 
 
 
@@ -11030,11 +11075,11 @@ Diagram.prototype = {
   };
 
   voronoi.x = function(_) {
-    return arguments.length ? (x = typeof _ === "function" ? _ : d3_voronoi_src_constant(+_), voronoi) : x;
+    return arguments.length ? (x = typeof _ === "function" ? _ : _d3_voronoi_1_1_4_d3_voronoi_src_constant(+_), voronoi) : x;
   };
 
   voronoi.y = function(_) {
-    return arguments.length ? (y = typeof _ === "function" ? _ : d3_voronoi_src_constant(+_), voronoi) : y;
+    return arguments.length ? (y = typeof _ === "function" ? _ : _d3_voronoi_1_1_4_d3_voronoi_src_constant(+_), voronoi) : y;
   };
 
   voronoi.extent = function(_) {
@@ -11048,10 +11093,10 @@ Diagram.prototype = {
   return voronoi;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-voronoi/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-voronoi@1.1.4@d3-voronoi/src/index.js
 
 
-// CONCATENATED MODULE: ./node_modules/d3-interpolate/src/zoom.js
+// CONCATENATED MODULE: ./node_modules/_d3-interpolate@1.4.0@d3-interpolate/src/zoom.js
 var rho = Math.SQRT2,
     rho2 = 2,
     rho4 = 4,
@@ -11117,21 +11162,21 @@ function tanh(x) {
   return i;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/constant.js
-/* harmony default export */ var d3_zoom_src_constant = (function(x) {
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/constant.js
+/* harmony default export */ var _d3_zoom_1_8_3_d3_zoom_src_constant = (function(x) {
   return function() {
     return x;
   };
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/event.js
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/event.js
 function ZoomEvent(target, type, transform) {
   this.target = target;
   this.type = type;
   this.transform = transform;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/transform.js
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/transform.js
 function Transform(k, x, y) {
   this.k = k;
   this.x = x;
@@ -11184,19 +11229,19 @@ function transform_transform(node) {
   return node.__zoom;
 }
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/noevent.js
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/noevent.js
 
 
 function src_noevent_nopropagation() {
   on_event.stopImmediatePropagation();
 }
 
-/* harmony default export */ var d3_zoom_src_noevent = (function() {
+/* harmony default export */ var _d3_zoom_1_8_3_d3_zoom_src_noevent = (function() {
   on_event.preventDefault();
   on_event.stopImmediatePropagation();
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/zoom.js
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/zoom.js
 
 
 
@@ -11248,7 +11293,7 @@ function defaultConstrain(transform, extent, translateExtent) {
   );
 }
 
-/* harmony default export */ var d3_zoom_src_zoom = (function() {
+/* harmony default export */ var _d3_zoom_1_8_3_d3_zoom_src_zoom = (function() {
   var filter = zoom_defaultFilter,
       extent = zoom_defaultExtent,
       constrain = defaultConstrain,
@@ -11436,7 +11481,7 @@ function defaultConstrain(transform, extent, translateExtent) {
       g.start();
     }
 
-    d3_zoom_src_noevent();
+    _d3_zoom_1_8_3_d3_zoom_src_noevent();
     g.wheel = setTimeout(wheelidled, wheelDelay);
     g.zoom("mouse", constrain(translate(scale(t, k), g.mouse[0], g.mouse[1]), g.extent, translateExtent));
 
@@ -11461,7 +11506,7 @@ function defaultConstrain(transform, extent, translateExtent) {
     g.start();
 
     function mousemoved() {
-      d3_zoom_src_noevent();
+      _d3_zoom_1_8_3_d3_zoom_src_noevent();
       if (!g.moved) {
         var dx = on_event.clientX - x0, dy = on_event.clientY - y0;
         g.moved = dx * dx + dy * dy > clickDistance2;
@@ -11472,7 +11517,7 @@ function defaultConstrain(transform, extent, translateExtent) {
     function mouseupped() {
       v.on("mousemove.zoom mouseup.zoom", null);
       yesdrag(on_event.view, g.moved);
-      d3_zoom_src_noevent();
+      _d3_zoom_1_8_3_d3_zoom_src_noevent();
       g.end();
     }
   }
@@ -11485,7 +11530,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         k1 = t0.k * (on_event.shiftKey ? 0.5 : 2),
         t1 = constrain(translate(scale(t0, k1), p0, p1), extent.apply(this, arguments), translateExtent);
 
-    d3_zoom_src_noevent();
+    _d3_zoom_1_8_3_d3_zoom_src_noevent();
     if (duration > 0) src_select(this).transition().duration(duration).call(schedule, t1, p0);
     else src_select(this).call(zoom.transform, t1);
   }
@@ -11520,7 +11565,7 @@ function defaultConstrain(transform, extent, translateExtent) {
         touches = on_event.changedTouches,
         n = touches.length, i, t, p, l;
 
-    d3_zoom_src_noevent();
+    _d3_zoom_1_8_3_d3_zoom_src_noevent();
     if (touchstarting) touchstarting = clearTimeout(touchstarting);
     g.taps = 0;
     for (i = 0; i < n; ++i) {
@@ -11570,19 +11615,19 @@ function defaultConstrain(transform, extent, translateExtent) {
   }
 
   zoom.wheelDelta = function(_) {
-    return arguments.length ? (wheelDelta = typeof _ === "function" ? _ : d3_zoom_src_constant(+_), zoom) : wheelDelta;
+    return arguments.length ? (wheelDelta = typeof _ === "function" ? _ : _d3_zoom_1_8_3_d3_zoom_src_constant(+_), zoom) : wheelDelta;
   };
 
   zoom.filter = function(_) {
-    return arguments.length ? (filter = typeof _ === "function" ? _ : d3_zoom_src_constant(!!_), zoom) : filter;
+    return arguments.length ? (filter = typeof _ === "function" ? _ : _d3_zoom_1_8_3_d3_zoom_src_constant(!!_), zoom) : filter;
   };
 
   zoom.touchable = function(_) {
-    return arguments.length ? (touchable = typeof _ === "function" ? _ : d3_zoom_src_constant(!!_), zoom) : touchable;
+    return arguments.length ? (touchable = typeof _ === "function" ? _ : _d3_zoom_1_8_3_d3_zoom_src_constant(!!_), zoom) : touchable;
   };
 
   zoom.extent = function(_) {
-    return arguments.length ? (extent = typeof _ === "function" ? _ : d3_zoom_src_constant([[+_[0][0], +_[0][1]], [+_[1][0], +_[1][1]]]), zoom) : extent;
+    return arguments.length ? (extent = typeof _ === "function" ? _ : _d3_zoom_1_8_3_d3_zoom_src_constant([[+_[0][0], +_[0][1]], [+_[1][0], +_[1][1]]]), zoom) : extent;
   };
 
   zoom.scaleExtent = function(_) {
@@ -11617,11 +11662,11 @@ function defaultConstrain(transform, extent, translateExtent) {
   return zoom;
 });
 
-// CONCATENATED MODULE: ./node_modules/d3-zoom/src/index.js
+// CONCATENATED MODULE: ./node_modules/_d3-zoom@1.8.3@d3-zoom/src/index.js
 
 
 
-// CONCATENATED MODULE: ./node_modules/d3/index.js
+// CONCATENATED MODULE: ./node_modules/_d3@5.16.0@d3/index.js
 
 
 
@@ -11753,7 +11798,7 @@ const handleBorderStartEnd = pcontainer => {
 
   borderStartEl.style.top = rect.top + 'px';
 };
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/brush-timeline/src/timeline.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@8.1.0@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./src/brush-timeline/src/timeline.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -12086,9 +12131,9 @@ const handleBorderStartEnd = pcontainer => {
 // CONCATENATED MODULE: ./src/brush-timeline/src/timeline.vue?vue&type=script&lang=js&
  /* harmony default export */ var src_timelinevue_type_script_lang_js_ = (timelinevue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/brush-timeline/src/timeline.vue?vue&type=style&index=0&lang=scss&
-var timelinevue_type_style_index_0_lang_scss_ = __webpack_require__(192);
+var timelinevue_type_style_index_0_lang_scss_ = __webpack_require__(191);
 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./src/brush-timeline/src/timeline.vue
@@ -12131,7 +12176,7 @@ timeline.install = function (Vue) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var api = __webpack_require__(3);
-            var content = __webpack_require__(193);
+            var content = __webpack_require__(192);
 
             content = content.__esModule ? content.default : content;
 
@@ -12331,7 +12376,7 @@ function applyToTag(style, options, obj) {
     style.removeAttribute('media');
   }
 
-  if (sourceMap && btoa) {
+  if (sourceMap && typeof btoa !== 'undefined') {
     css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
   } // For old IE
 
@@ -12428,7 +12473,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 95:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12449,8 +12494,8 @@ module.exports = function (list, options) {
  *
  * Create a fully customizable, interactive timeline with items and ranges.
  *
- * @version 7.3.7
- * @date    2020-06-20T13:17:46.663Z
+ * @version 7.3.10
+ * @date    2020-10-05T08:00:16.744Z
  *
  * @copyright (c) 2011-2017 Almende B.V, http://almende.com
  * @copyright (c) 2017-2019 visjs contributors, https://github.com/visjs
@@ -12471,8 +12516,14 @@ module.exports = function (list, options) {
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
+function createCommonjsModule(fn, basedir, module) {
+	return module = {
+		path: basedir,
+		exports: {},
+		require: function (path, base) {
+			return commonjsRequire(path, (base === undefined || base === null) ? module.path : base);
+		}
+	}, fn(module, module.exports), module.exports;
 }
 
 function commonjsRequire () {
@@ -15829,7 +15880,10 @@ var moment = createCommonjsModule(function (module, exports) {
     function calendar$1(time, formats) {
       // Support for single parameter, formats only overload to the calendar function
       if (arguments.length === 1) {
-        if (isMomentInput(arguments[0])) {
+        if (!arguments[0]) {
+          time = undefined;
+          formats = undefined;
+        } else if (isMomentInput(arguments[0])) {
           time = arguments[0];
           formats = undefined;
         } else if (isCalendarSpec(arguments[0])) {
@@ -16481,7 +16535,7 @@ var moment = createCommonjsModule(function (module, exports) {
 
       for (i = 0, l = eras.length; i < l; ++i) {
         // truncate time
-        val = this.startOf('day').valueOf();
+        val = this.clone().startOf('day').valueOf();
 
         if (eras[i].since <= val && val <= eras[i].until) {
           return eras[i].name;
@@ -16503,7 +16557,7 @@ var moment = createCommonjsModule(function (module, exports) {
 
       for (i = 0, l = eras.length; i < l; ++i) {
         // truncate time
-        val = this.startOf('day').valueOf();
+        val = this.clone().startOf('day').valueOf();
 
         if (eras[i].since <= val && val <= eras[i].until) {
           return eras[i].narrow;
@@ -16525,7 +16579,7 @@ var moment = createCommonjsModule(function (module, exports) {
 
       for (i = 0, l = eras.length; i < l; ++i) {
         // truncate time
-        val = this.startOf('day').valueOf();
+        val = this.clone().startOf('day').valueOf();
 
         if (eras[i].since <= val && val <= eras[i].until) {
           return eras[i].abbr;
@@ -16549,7 +16603,7 @@ var moment = createCommonjsModule(function (module, exports) {
       for (i = 0, l = eras.length; i < l; ++i) {
         dir = eras[i].since <= eras[i].until ? +1 : -1; // truncate time
 
-        val = this.startOf('day').valueOf();
+        val = this.clone().startOf('day').valueOf();
 
         if (eras[i].since <= val && val <= eras[i].until || eras[i].until <= val && val <= eras[i].since) {
           return (this.year() - hooks(eras[i].since).year()) * dir + eras[i].offset;
@@ -17524,7 +17578,7 @@ var moment = createCommonjsModule(function (module, exports) {
       config._d = new Date(toInt(input));
     }); //! moment.js
 
-    hooks.version = '2.27.0';
+    hooks.version = '2.29.0';
     setHookCallback(createLocal);
     hooks.fn = proto;
     hooks.min = min;
@@ -17723,6 +17777,8 @@ var es = createCommonjsModule(function (module, exports) {
         hh: '%d horas',
         d: 'un día',
         dd: '%d días',
+        w: 'una semana',
+        ww: '%d semanas',
         M: 'un mes',
         MM: '%d meses',
         y: 'un año',
@@ -17736,7 +17792,7 @@ var es = createCommonjsModule(function (module, exports) {
         doy: 4 // The week that contains Jan 4th is the first week of the year.
 
       },
-      invalidDate: 'Fecha invalida'
+      invalidDate: 'Fecha inválida'
     });
     return es;
   });
@@ -17793,6 +17849,8 @@ var fr = createCommonjsModule(function (module, exports) {
         hh: '%d heures',
         d: 'un jour',
         dd: '%d jours',
+        w: 'une semaine',
+        ww: '%d semaines',
         M: 'un mois',
         MM: '%d mois',
         y: 'un an',
@@ -17887,6 +17945,8 @@ var it = createCommonjsModule(function (module, exports) {
         hh: '%d ore',
         d: 'un giorno',
         dd: '%d giorni',
+        w: 'una settimana',
+        ww: '%d settimane',
         M: 'un mese',
         MM: '%d mesi',
         y: 'un anno',
@@ -18108,6 +18168,8 @@ var nl = createCommonjsModule(function (module, exports) {
         hh: '%d uur',
         d: 'één dag',
         dd: '%d dagen',
+        w: 'één week',
+        ww: '%d weken',
         M: 'één maand',
         MM: '%d maanden',
         y: 'één jaar',
@@ -18135,7 +18197,8 @@ var pl = createCommonjsModule(function (module, exports) {
   })(commonjsGlobal, function (moment) {
 
     var monthsNominative = 'styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień'.split('_'),
-        monthsSubjective = 'stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia'.split('_');
+        monthsSubjective = 'stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia'.split('_'),
+        monthsParse = [/^sty/i, /^lut/i, /^mar/i, /^kwi/i, /^maj/i, /^cze/i, /^lip/i, /^sie/i, /^wrz/i, /^paź/i, /^lis/i, /^gru/i];
 
     function plural(n) {
       return n % 10 < 5 && n % 10 > 1 && ~~(n / 10) % 10 !== 1;
@@ -18160,6 +18223,9 @@ var pl = createCommonjsModule(function (module, exports) {
         case 'hh':
           return result + (plural(number) ? 'godziny' : 'godzin');
 
+        case 'ww':
+          return result + (plural(number) ? 'tygodnie' : 'tygodni');
+
         case 'MM':
           return result + (plural(number) ? 'miesiące' : 'miesięcy');
 
@@ -18172,11 +18238,6 @@ var pl = createCommonjsModule(function (module, exports) {
       months: function (momentToFormat, format) {
         if (!momentToFormat) {
           return monthsNominative;
-        } else if (format === '') {
-          // Hack: if format empty we know this is used to generate
-          // RegExp by moment. Give then back both valid forms of months
-          // in RegExp ready format.
-          return '(' + monthsSubjective[momentToFormat.month()] + '|' + monthsNominative[momentToFormat.month()] + ')';
         } else if (/D MMMM/.test(format)) {
           return monthsSubjective[momentToFormat.month()];
         } else {
@@ -18184,6 +18245,9 @@ var pl = createCommonjsModule(function (module, exports) {
         }
       },
       monthsShort: 'sty_lut_mar_kwi_maj_cze_lip_sie_wrz_paź_lis_gru'.split('_'),
+      monthsParse: monthsParse,
+      longMonthsParse: monthsParse,
+      shortMonthsParse: monthsParse,
       weekdays: 'niedziela_poniedziałek_wtorek_środa_czwartek_piątek_sobota'.split('_'),
       weekdaysShort: 'ndz_pon_wt_śr_czw_pt_sob'.split('_'),
       weekdaysMin: 'Nd_Pn_Wt_Śr_Cz_Pt_So'.split('_'),
@@ -18245,6 +18309,8 @@ var pl = createCommonjsModule(function (module, exports) {
         hh: translate,
         d: '1 dzień',
         dd: '%d dni',
+        w: 'tydzień',
+        ww: translate,
         M: 'miesiąc',
         MM: translate,
         y: 'rok',
@@ -18280,6 +18346,7 @@ var ru = createCommonjsModule(function (module, exports) {
         mm: withoutSuffix ? 'минута_минуты_минут' : 'минуту_минуты_минут',
         hh: 'час_часа_часов',
         dd: 'день_дня_дней',
+        ww: 'неделя_недели_недель',
         MM: 'месяц_месяца_месяцев',
         yy: 'год_года_лет'
       };
@@ -18396,6 +18463,8 @@ var ru = createCommonjsModule(function (module, exports) {
         hh: relativeTimeWithPlural,
         d: 'день',
         dd: relativeTimeWithPlural,
+        w: 'неделя',
+        ww: relativeTimeWithPlural,
         M: 'месяц',
         MM: relativeTimeWithPlural,
         y: 'год',
@@ -21344,8 +21413,8 @@ function _arrayLikeToArray$1(arr, len) { if (len == null || len > arr.length) le
  *
  * utilitie collection for visjs
  *
- * @version 4.3.2
- * @date    2020-06-15T14:15:22.151Z
+ * @version 4.3.4
+ * @date    2020-08-01T15:11:53.524Z
  *
  * @copyright (c) 2011-2017 Almende B.V, http://almende.com
  * @copyright (c) 2017-2019 visjs contributors, https://github.com/visjs
@@ -21399,7 +21468,6 @@ function pureDeepObjectAssign(base) {
 function deepObjectAssign() {
   var merged = deepObjectAssignNonentry.apply(void 0, arguments);
   stripDelete(merged);
-  console.log(merged);
   return merged;
 }
 /**
@@ -21436,7 +21504,7 @@ function deepObjectAssignNonentry() {
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       var prop = _step.value;
-      if (Object.prototype.propertyIsEnumerable.call(b, b[prop])) ;else if (b[prop] === DELETE) {
+      if (!Object.prototype.propertyIsEnumerable.call(b, prop)) ;else if (b[prop] === DELETE) {
         delete a[prop];
       } else if (a[prop] !== null && b[prop] !== null && _typeof_1(a[prop]) === "object" && _typeof_1(b[prop]) === "object" && !isArray$5(a[prop]) && !isArray$5(b[prop])) {
         a[prop] = deepObjectAssignNonentry(a[prop], b[prop]);
@@ -24186,10 +24254,6 @@ var internalMetadata = createCommonjsModule(function (module) {
   };
   hiddenKeys[METADATA] = true;
 });
-var internalMetadata_1 = internalMetadata.REQUIRED;
-var internalMetadata_2 = internalMetadata.fastKey;
-var internalMetadata_3 = internalMetadata.getWeakData;
-var internalMetadata_4 = internalMetadata.onFreeze;
 
 var iterate_1 = createCommonjsModule(function (module) {
   var Result = function (stopped, result) {
@@ -24565,6 +24629,25 @@ var runtime_1 = createCommonjsModule(function (module) {
     var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
     var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
 
+    function define(obj, key, value) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+      return obj[key];
+    }
+
+    try {
+      // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+      define({}, "");
+    } catch (err) {
+      define = function (obj, key, value) {
+        return obj[key] = value;
+      };
+    }
+
     function wrap(innerFn, outerFn, self, tryLocsList) {
       // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
       var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
@@ -24638,14 +24721,14 @@ var runtime_1 = createCommonjsModule(function (module) {
     var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
     GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
     GeneratorFunctionPrototype.constructor = GeneratorFunction;
-    GeneratorFunctionPrototype[toStringTagSymbol] = GeneratorFunction.displayName = "GeneratorFunction"; // Helper for defining the .next, .throw, and .return methods of the
+    GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"); // Helper for defining the .next, .throw, and .return methods of the
     // Iterator interface in terms of a single ._invoke method.
 
     function defineIteratorMethods(prototype) {
       ["next", "throw", "return"].forEach(function (method) {
-        prototype[method] = function (arg) {
+        define(prototype, method, function (arg) {
           return this._invoke(method, arg);
-        };
+        });
       });
     }
 
@@ -24661,10 +24744,7 @@ var runtime_1 = createCommonjsModule(function (module) {
         Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
       } else {
         genFun.__proto__ = GeneratorFunctionPrototype;
-
-        if (!(toStringTagSymbol in genFun)) {
-          genFun[toStringTagSymbol] = "GeneratorFunction";
-        }
+        define(genFun, toStringTagSymbol, "GeneratorFunction");
       }
 
       genFun.prototype = Object.create(Gp);
@@ -24920,7 +25000,7 @@ var runtime_1 = createCommonjsModule(function (module) {
 
 
     defineIteratorMethods(Gp);
-    Gp[toStringTagSymbol] = "Generator"; // A Generator should always return itself as the iterator object when the
+    define(Gp, toStringTagSymbol, "Generator"); // A Generator should always return itself as the iterator object when the
     // @@iterator function is called on it. Some browsers' implementations of the
     // iterator prototype chain incorrectly implement this, causing the Generator
     // object to not be returned from this call. This ensures that doesn't happen.
@@ -25925,169 +26005,7 @@ var DataPipeUnderConstruction = /*#__PURE__*/function () {
   }]);
 
   return DataPipeUnderConstruction;
-}(); // utility functions
-// parse ASP.Net Date pattern,
-// for example '/Date(1198908717056)/' or '/Date(1198908717056-0700)/'
-// code from http://momentjs.com/
-
-
-var ASPDateRegex$1 = /^\/?Date\((-?\d+)/i;
-/**
- * Test whether given object is a Moment date.
- *
- * @param value - Input value of unknown type.
- *
- * @returns True if Moment instance, false otherwise.
- */
-
-function isMoment(value) {
-  return moment.isMoment(value);
-}
-/**
- * Convert an object into another type
- *
- * @param object - Value of unknown type.
- * @param type - Name of the desired type.
- *
- * @returns Object in the desired type.
- * @throws Error
- */
-
-
-function convert(object, type) {
-  var match;
-
-  if (object === undefined) {
-    return undefined;
-  }
-
-  if (object === null) {
-    return null;
-  }
-
-  if (!type) {
-    return object;
-  }
-
-  if (!(typeof type === "string") && !(type instanceof String)) {
-    throw new Error("Type must be a string");
-  } //noinspection FallthroughInSwitchStatementJS
-
-
-  switch (type) {
-    case "boolean":
-    case "Boolean":
-      return Boolean(object);
-
-    case "number":
-    case "Number":
-      if (isString(object) && !isNaN(Date.parse(object))) {
-        return moment(object).valueOf();
-      } else {
-        // @TODO: I don't think that Number and String constructors are a good idea.
-        // This could also fail if the object doesn't have valueOf method or if it's redefined.
-        // For example: Object.create(null) or { valueOf: 7 }.
-        return Number(object.valueOf());
-      }
-
-    case "string":
-    case "String":
-      return String(object);
-
-    case "Date":
-      if (isNumber(object)) {
-        return new Date(object);
-      }
-
-      if (object instanceof Date) {
-        return new Date(object.valueOf());
-      } else if (isMoment(object)) {
-        return new Date(object.valueOf());
-      }
-
-      if (isString(object)) {
-        match = ASPDateRegex$1.exec(object);
-
-        if (match) {
-          // object is an ASP date
-          return new Date(Number(match[1])); // parse number
-        } else {
-          return moment(new Date(object)).toDate(); // parse string
-        }
-      } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type Date");
-      }
-
-    case "Moment":
-      if (isNumber(object)) {
-        return moment(object);
-      }
-
-      if (object instanceof Date) {
-        return moment(object.valueOf());
-      } else if (isMoment(object)) {
-        return moment(object);
-      }
-
-      if (isString(object)) {
-        match = ASPDateRegex$1.exec(object);
-
-        if (match) {
-          // object is an ASP date
-          return moment(Number(match[1])); // parse number
-        } else {
-          return moment(object); // parse string
-        }
-      } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type Date");
-      }
-
-    case "ISODate":
-      if (isNumber(object)) {
-        return new Date(object);
-      } else if (object instanceof Date) {
-        return object.toISOString();
-      } else if (isMoment(object)) {
-        return object.toDate().toISOString();
-      } else if (isString(object)) {
-        match = ASPDateRegex$1.exec(object);
-
-        if (match) {
-          // object is an ASP date
-          return new Date(Number(match[1])).toISOString(); // parse number
-        } else {
-          return moment(object).format(); // ISO 8601
-        }
-      } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type ISODate");
-      }
-
-    case "ASPDate":
-      if (isNumber(object)) {
-        return "/Date(" + object + ")/";
-      } else if (object instanceof Date || isMoment(object)) {
-        return "/Date(" + object.valueOf() + ")/";
-      } else if (isString(object)) {
-        match = ASPDateRegex$1.exec(object);
-        var value;
-
-        if (match) {
-          // object is an ASP date
-          value = new Date(Number(match[1])).valueOf(); // parse number
-        } else {
-          value = new Date(object).valueOf(); // parse string
-        }
-
-        return "/Date(" + value + ")/";
-      } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type ASPDate");
-      }
-
-    default:
-      var never = type;
-      throw new Error("Unknown type ".concat(never));
-  }
-}
+}();
 /**
  * Determine whether a value can be used as an id.
  *
@@ -27135,14 +27053,39 @@ var DataStream = /*#__PURE__*/function () {
 }();
 /* eslint @typescript-eslint/member-ordering: ["error", { "classes": ["field", "constructor", "method"] }] */
 
+/**
+ * Add an id to given item if it doesn't have one already.
+ *
+ * @remarks
+ * The item will be modified.
+ *
+ * @param item - The item that will have an id after a call to this function.
+ * @param idProp - The key of the id property.
+ *
+ * @typeParam Item - Item type that may or may not have an id.
+ * @typeParam IdProp - Name of the property that contains the id.
+ *
+ * @returns true
+ */
 
-var warnTypeCorectionDeprecation = function warnTypeCorectionDeprecation() {
-  console.warn("Type coercion has been deprecated. " + "Please, use data pipes instead. " + "See https://visjs.github.io/vis-data/data/datapipe.html#TypeCoercion for more details with working migration example.");
-};
+
+function ensureFullItem(item, idProp) {
+  if (item[idProp] == null) {
+    // generate an id
+    item[idProp] = v4();
+  }
+
+  return item;
+}
 /**
  * # DataSet
  *
- * Vis.js comes with a flexible DataSet, which can be used to hold and manipulate unstructured data and listen for changes in the data. The DataSet is key/value based. Data items can be added, updated and removed from the DataSet, and one can subscribe to changes in the DataSet. The data in the DataSet can be filtered and ordered, and fields (like dates) can be converted to a specific type. Data can be normalized when appending it to the DataSet as well.
+ * Vis.js comes with a flexible DataSet, which can be used to hold and
+ * manipulate unstructured data and listen for changes in the data. The DataSet
+ * is key/value based. Data items can be added, updated and removed from the
+ * DataSet, and one can subscribe to changes in the DataSet. The data in the
+ * DataSet can be filtered and ordered. Data can be normalized when appending it
+ * to the DataSet as well.
  *
  * ## Example
  *
@@ -27224,28 +27167,7 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
     _this3.length = 0; // number of items in the DataSet
 
     _this3._idProp = _this3._options.fieldId || "id"; // name of the field containing id
-
-    _this3._type = {}; // internal field types (NOTE: this can differ from this._options.type)
-    // all variants of a Date are internally stored as Date, so we can convert
-    // from everything to everything (also from ISODate to Number for example)
-
-    if (_this3._options.type) {
-      warnTypeCorectionDeprecation();
-
-      var fields = keys$3(_this3._options.type);
-
-      for (var i = 0, len = fields.length; i < len; i++) {
-        var field = fields[i];
-        var _value3 = _this3._options.type[field];
-
-        if (_value3 == "Date" || _value3 == "ISODate" || _value3 == "ASPDate") {
-          _this3._type[field] = "Date";
-        } else {
-          _this3._type[field] = _value3;
-        }
-      }
-    } // add initial data when provided
-
+    // add initial data when provided
 
     if (data && data.length) {
       _this3.add(data);
@@ -27605,26 +27527,24 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
       // }
       // build options
 
-      var type = options && options.type || this._options.type;
-
       var filter = options && filter$2(options);
 
       var items = [];
-      var item = null;
-      var itemIds = null;
-      var itemId = null; // convert items
+      var item = undefined;
+      var itemIds = undefined;
+      var itemId = undefined; // convert items
 
       if (id != null) {
         // return a single item
-        item = this._getItem(id, type);
+        item = this._data.get(id);
 
         if (item && filter && !filter(item)) {
-          item = null;
+          item = undefined;
         }
       } else if (ids != null) {
         // return a subset of items
         for (var i = 0, len = ids.length; i < len; i++) {
-          item = this._getItem(ids[i], type);
+          item = this._data.get(ids[i]);
 
           if (item != null && (!filter || filter(item))) {
             items.push(item);
@@ -27638,7 +27558,7 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
 
         for (var _i = 0, _len2 = itemIds.length; _i < _len2; _i++) {
           itemId = itemIds[_i];
-          item = this._getItem(itemId, type);
+          item = this._data.get(itemId);
 
           if (item != null && (!filter || filter(item))) {
             items.push(item);
@@ -27680,7 +27600,7 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
       } else {
         if (id != null) {
           // a single item
-          return item;
+          return item !== null && item !== void 0 ? item : null;
         } else {
           // just return our array
           return items;
@@ -27697,25 +27617,23 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
       var filter = options && filter$2(options);
 
       var order = options && options.order;
-      var type = options && options.type || this._options.type;
 
       var itemIds = toConsumableArray(keys$6(data).call(data));
 
       var ids = [];
-      var item;
-      var items;
 
       if (filter) {
         // get filtered items
         if (order) {
           // create ordered list
-          items = [];
+          var items = [];
 
           for (var i = 0, len = itemIds.length; i < len; i++) {
             var id = itemIds[i];
-            item = this._getItem(id, type);
 
-            if (filter(item)) {
+            var item = this._data.get(id);
+
+            if (item != null && filter(item)) {
               items.push(item);
             }
           }
@@ -27729,10 +27647,11 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
           // create unordered list
           for (var _i5 = 0, _len6 = itemIds.length; _i5 < _len6; _i5++) {
             var _id3 = itemIds[_i5];
-            item = this._getItem(_id3, type);
 
-            if (filter(item)) {
-              ids.push(item[this._idProp]);
+            var _item = this._data.get(_id3);
+
+            if (_item != null && filter(_item)) {
+              ids.push(_item[this._idProp]);
             }
           }
         }
@@ -27740,24 +27659,29 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
         // get all items
         if (order) {
           // create an ordered list
-          items = [];
+          var _items = [];
 
           for (var _i6 = 0, _len7 = itemIds.length; _i6 < _len7; _i6++) {
             var _id4 = itemIds[_i6];
-            items.push(data.get(_id4));
+
+            _items.push(data.get(_id4));
           }
 
-          this._sort(items, order);
+          this._sort(_items, order);
 
-          for (var _i7 = 0, _len8 = items.length; _i7 < _len8; _i7++) {
-            ids.push(items[_i7][this._idProp]);
+          for (var _i7 = 0, _len8 = _items.length; _i7 < _len8; _i7++) {
+            ids.push(_items[_i7][this._idProp]);
           }
         } else {
           // create unordered list
           for (var _i8 = 0, _len9 = itemIds.length; _i8 < _len9; _i8++) {
             var _id5 = itemIds[_i8];
-            item = data.get(_id5);
-            ids.push(item[this._idProp]);
+
+            var _item2 = data.get(_id5);
+
+            if (_item2 != null) {
+              ids.push(_item2[this._idProp]);
+            }
           }
         }
       }
@@ -27778,7 +27702,6 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
     value: function forEach(callback, options) {
       var filter = options && filter$2(options);
 
-      var type = options && options.type || this._options.type;
       var data = this._data;
 
       var itemIds = toConsumableArray(keys$6(data).call(data));
@@ -27797,10 +27720,10 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
         for (var _i9 = 0, _len10 = itemIds.length; _i9 < _len10; _i9++) {
           var _id6 = itemIds[_i9];
 
-          var _item = this._getItem(_id6, type);
+          var _item3 = this._data.get(_id6);
 
-          if (!filter || filter(_item)) {
-            callback(_item, _id6);
+          if (_item3 != null && (!filter || filter(_item3))) {
+            callback(_item3, _id6);
           }
         }
       }
@@ -27812,7 +27735,6 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
     value: function map(callback, options) {
       var filter = options && filter$2(options);
 
-      var type = options && options.type || this._options.type;
       var mappedItems = [];
       var data = this._data;
 
@@ -27822,9 +27744,9 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
       for (var i = 0, len = itemIds.length; i < len; i++) {
         var id = itemIds[i];
 
-        var item = this._getItem(id, type);
+        var item = this._data.get(id);
 
-        if (!filter || filter(item)) {
+        if (item != null && (!filter || filter(item))) {
           mappedItems.push(callback(item, id));
         }
       } // order items
@@ -28110,31 +28032,24 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
       var itemIds = toConsumableArray(keys$6(data).call(data));
 
       var values = [];
-      var fieldType = this._options.type && this._options.type[prop] || null;
       var count = 0;
 
       for (var i = 0, len = itemIds.length; i < len; i++) {
         var id = itemIds[i];
         var item = data.get(id);
-        var _value4 = item[prop];
+        var _value3 = item[prop];
         var exists = false;
 
         for (var j = 0; j < count; j++) {
-          if (values[j] == _value4) {
+          if (values[j] == _value3) {
             exists = true;
             break;
           }
         }
 
-        if (!exists && _value4 !== undefined) {
-          values[count] = _value4;
+        if (!exists && _value3 !== undefined) {
+          values[count] = _value3;
           count++;
-        }
-      }
-
-      if (fieldType) {
-        for (var _i10 = 0, _len11 = values.length; _i10 < _len11; _i10++) {
-          values[_i10] = convert(values[_i10], fieldType);
         }
       }
 
@@ -28151,115 +28066,45 @@ var DataSet = /*#__PURE__*/function (_DataSetPart) {
   }, {
     key: "_addItem",
     value: function _addItem(item) {
-      var id = item[this._idProp];
+      var fullItem = ensureFullItem(item, this._idProp);
+      var id = fullItem[this._idProp]; // check whether this id is already taken
 
-      if (id != null) {
-        // check whether this id is already taken
-        if (this._data.has(id)) {
-          // item already exists
-          throw new Error("Cannot add item: item with id " + id + " already exists");
-        }
-      } else {
-        // generate an id
-        id = v4();
-        item[this._idProp] = id;
+      if (this._data.has(id)) {
+        // item already exists
+        throw new Error("Cannot add item: item with id " + id + " already exists");
       }
 
-      var d = {};
-
-      var fields = keys$3(item);
-
-      for (var i = 0, len = fields.length; i < len; i++) {
-        var field = fields[i];
-        var fieldType = this._type[field]; // type may be undefined
-
-        d[field] = convert(item[field], fieldType);
-      }
-
-      this._data.set(id, d);
+      this._data.set(id, fullItem);
 
       ++this.length;
       return id;
     }
     /**
-     * Get an item. Fields can be converted to a specific type
-     *
-     * @param id - Id of the requested item.
-     * @param types - Property name to type name object map of type converstions.
-     *
-     * @returns The item, optionally after type conversion.
-     */
-
-  }, {
-    key: "_getItem",
-    value: function _getItem(id, types) {
-      // @TODO: I have no idea how to type this.
-      // get the item from the dataset
-      var raw = this._data.get(id);
-
-      if (!raw) {
-        return null;
-      } // convert the items field types
-
-
-      var converted;
-
-      var fields = keys$3(raw);
-
-      if (types) {
-        warnTypeCorectionDeprecation();
-        converted = {};
-
-        for (var i = 0, len = fields.length; i < len; i++) {
-          var field = fields[i];
-          var _value5 = raw[field];
-          converted[field] = convert(_value5, types[field]);
-        }
-      } else {
-        // no field types specified, no converting needed
-        converted = _objectSpread$1({}, raw);
-      }
-
-      if (converted[this._idProp] == null) {
-        converted[this._idProp] = raw.id;
-      }
-
-      return converted;
-    }
-    /**
      * Update a single item: merge with existing item.
      * Will fail when the item has no id, or when there does not exist an item with the same id.
      *
-     * @param item - The new item
+     * @param update - The new item
      *
      * @returns The id of the updated item.
      */
 
   }, {
     key: "_updateItem",
-    value: function _updateItem(item) {
-      var id = item[this._idProp];
+    value: function _updateItem(update) {
+      var id = update[this._idProp];
 
       if (id == null) {
-        throw new Error("Cannot update item: item has no id (item: " + stringify$2(item) + ")");
+        throw new Error("Cannot update item: item has no id (item: " + stringify$2(update) + ")");
       }
 
-      var d = this._data.get(id);
+      var item = this._data.get(id);
 
-      if (!d) {
+      if (!item) {
         // item doesn't exist
         throw new Error("Cannot update item: no item with id " + id + " found");
-      } // merge with current item
-
-
-      var fields = keys$3(item);
-
-      for (var i = 0, len = fields.length; i < len; i++) {
-        var field = fields[i];
-        var fieldType = this._type[field]; // type may be undefined
-
-        d[field] = convert(item[field], fieldType);
       }
+
+      this._data.set(id, _objectSpread$1(_objectSpread$1({}, item), update));
 
       return id;
     }
@@ -28514,8 +28359,8 @@ var DataView = /*#__PURE__*/function (_DataSetPart2) {
       } // check for removals
 
 
-      for (var _i11 = 0, _len12 = oldIds.length; _i11 < _len12; _i11++) {
-        var _id7 = oldIds[_i11];
+      for (var _i10 = 0, _len11 = oldIds.length; _i10 < _len11; _i10++) {
+        var _id7 = oldIds[_i10];
 
         var item = this._data.get(_id7);
 
@@ -28773,16 +28618,16 @@ var DataView = /*#__PURE__*/function (_DataSetPart2) {
         case "update":
           // determine the event from the views viewpoint: an updated
           // item can be added, updated, or removed from this view.
-          for (var _i12 = 0, _len13 = ids.length; _i12 < _len13; _i12++) {
-            var _id8 = ids[_i12];
+          for (var _i11 = 0, _len12 = ids.length; _i11 < _len12; _i11++) {
+            var _id8 = ids[_i11];
 
-            var _item2 = this.get(_id8);
+            var _item4 = this.get(_id8);
 
-            if (_item2) {
+            if (_item4) {
               if (this._ids.has(_id8)) {
                 updatedIds.push(_id8);
-                updatedItems.push(params.data[_i12]);
-                oldItems.push(params.oldData[_i12]);
+                updatedItems.push(params.data[_i11]);
+                oldItems.push(params.oldData[_i11]);
               } else {
                 this._ids.add(_id8);
 
@@ -28793,7 +28638,7 @@ var DataView = /*#__PURE__*/function (_DataSetPart2) {
                 this._ids.delete(_id8);
 
                 removedIds.push(_id8);
-                removedItems.push(params.oldData[_i12]);
+                removedItems.push(params.oldData[_i11]);
               }
             }
           }
@@ -28802,14 +28647,14 @@ var DataView = /*#__PURE__*/function (_DataSetPart2) {
 
         case "remove":
           // filter the ids of the removed items
-          for (var _i13 = 0, _len14 = ids.length; _i13 < _len14; _i13++) {
-            var _id9 = ids[_i13];
+          for (var _i12 = 0, _len13 = ids.length; _i12 < _len13; _i12++) {
+            var _id9 = ids[_i12];
 
             if (this._ids.has(_id9)) {
               this._ids.delete(_id9);
 
               removedIds.push(_id9);
-              removedItems.push(params.oldData[_i13]);
+              removedItems.push(params.oldData[_i12]);
             }
           }
 
@@ -28856,7 +28701,8 @@ function _objectSpread$2(target) { for (var i = 1; i < arguments.length; i++) { 
 // for example '/Date(1198908717056)/' or '/Date(1198908717056-0700)/'
 // code from http://momentjs.com/
 
-var ASPDateRegex$2 = /^\/?Date\((-?\d+)/i;
+var ASPDateRegex$1 = /^\/?Date\((-?\d+)/i;
+var NumericRegex = /^\d+$/;
 /**
  * Convert an object into another type
  *
@@ -28867,7 +28713,7 @@ var ASPDateRegex$2 = /^\/?Date\((-?\d+)/i;
  * @throws Error
  */
 
-function convert$1(object, type) {
+function convert(object, type) {
   var match;
 
   if (object === undefined) {
@@ -28908,27 +28754,14 @@ function convert$1(object, type) {
       return String(object);
 
     case "Date":
-      if (isNumber(object)) {
-        return new Date(object);
-      }
-
-      if (object instanceof Date) {
-        return new Date(object.valueOf());
-      } else if (moment.isMoment(object)) {
-        return new Date(object.valueOf());
-      }
-
-      if (isString(object)) {
-        match = ASPDateRegex$2.exec(object);
-
-        if (match) {
-          // object is an ASP date
-          return new Date(Number(match[1])); // parse number
+      try {
+        return convert(object, "Moment").toDate();
+      } catch (e) {
+        if (e instanceof TypeError) {
+          throw new TypeError("Cannot convert object of type " + getType(object) + " to type " + type);
         } else {
-          return moment(new Date(object)).toDate(); // parse string
+          throw e;
         }
-      } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type Date");
       }
 
     case "Moment":
@@ -28943,16 +28776,22 @@ function convert$1(object, type) {
       }
 
       if (isString(object)) {
-        match = ASPDateRegex$2.exec(object);
+        match = ASPDateRegex$1.exec(object);
 
         if (match) {
           // object is an ASP date
           return moment(Number(match[1])); // parse number
-        } else {
-          return moment(object); // parse string
         }
+
+        match = NumericRegex.exec(object);
+
+        if (match) {
+          return moment(Number(object));
+        }
+
+        return moment(object); // parse string
       } else {
-        throw new Error("Cannot convert object of type " + getType(object) + " to type Date");
+        throw new TypeError("Cannot convert object of type " + getType(object) + " to type " + type);
       }
 
     case "ISODate":
@@ -28963,7 +28802,7 @@ function convert$1(object, type) {
       } else if (moment.isMoment(object)) {
         return object.toDate().toISOString();
       } else if (isString(object)) {
-        match = ASPDateRegex$2.exec(object);
+        match = ASPDateRegex$1.exec(object);
 
         if (match) {
           // object is an ASP date
@@ -28981,7 +28820,7 @@ function convert$1(object, type) {
       } else if (object instanceof Date || moment.isMoment(object)) {
         return "/Date(" + object.valueOf() + ")/";
       } else if (isString(object)) {
-        match = ASPDateRegex$2.exec(object);
+        match = ASPDateRegex$1.exec(object);
         var value;
 
         if (match) {
@@ -29043,7 +28882,7 @@ function typeCoerceDataSet(rawDS) {
     var _context2;
 
     return reduce$2(_context2 = keys$3(item)).call(_context2, function (acc, key) {
-      acc[key] = convert$1(item[key], type[key]);
+      acc[key] = convert(item[key], type[key]);
       return acc;
     }, {});
   }).to(coercedDS);
@@ -29093,7 +28932,7 @@ function typeCoerceDataSet(rawDS) {
   };
 }
 var util$1 = _objectSpread$2(_objectSpread$2({}, util), {}, {
-  convert: convert$1
+  convert: convert
 });
 
 var trim$4 = stringTrim.trim;
@@ -37178,7 +37017,7 @@ var Core = /*#__PURE__*/function () {
 
       if (options) {
         // copy the known options
-        var fields = ['width', 'height', 'minHeight', 'maxHeight', 'autoResize', 'start', 'end', 'clickToUse', 'dataAttributes', 'hiddenDates', 'locale', 'locales', 'moment', 'preferZoom', 'rtl', 'zoomKey', 'horizontalScroll', 'verticalScroll', 'longSelectPressTime'];
+        var fields = ['width', 'height', 'minHeight', 'maxHeight', 'autoResize', 'start', 'end', 'clickToUse', 'dataAttributes', 'hiddenDates', 'locale', 'locales', 'moment', 'preferZoom', 'rtl', 'zoomKey', 'horizontalScroll', 'verticalScroll', 'longSelectPressTime', 'snap'];
         util$1.selectiveExtend(fields, this.options, options);
         this.dom.rollingModeBtn.style.visibility = 'hidden';
 
@@ -37497,7 +37336,7 @@ var Core = /*#__PURE__*/function () {
       var customTime = new CustomTime(this.body, util$1.extend({}, this.options, {
         time: timestamp,
         id: id,
-        snap: this.itemSet.options.snap
+        snap: this.itemSet ? this.itemSet.options.snap : this.options.snap
       }));
       this.customTimes.push(customTime);
       this.components.push(customTime);
@@ -52905,7 +52744,6 @@ function LineGraph(body, options) {
   this.setOptions(options);
   this.groupsUsingDefaultStyles = [0];
   this.body.emitter.on('rangechanged', function () {
-    me.lastStart = me.body.range.start;
     me.svg.style.left = util$1.option.asSize(-me.props.width);
     me.forceGraphUpdate = true; //Is this local redraw necessary? (Core also does a change event!)
 
@@ -53408,6 +53246,8 @@ LineGraph.prototype.redraw = function () {
   if (resized == true || zoomed == true || this.abortedGraphUpdate == true || this.forceGraphUpdate == true) {
     resized = this._updateGraph() || resized;
     this.forceGraphUpdate = false;
+    this.lastStart = this.body.range.start;
+    this.svg.style.left = -this.props.width + 'px';
   } else {
     // move the whole svg while dragging
     if (this.lastStart != 0) {
@@ -54431,6 +54271,10 @@ var allOptions$2 = {
   showWeekScale: {
     'boolean': bool$1
   },
+  snap: {
+    'function': 'function',
+    'null': 'null'
+  },
   start: {
     date: date$1,
     number: number$1,
@@ -54655,6 +54499,12 @@ function Graph2d(container, items, groups, options) {
     },
     hiddenDates: [],
     util: {
+      getScale: function getScale() {
+        return me.timeAxis.step.scale;
+      },
+      getStep: function getStep() {
+        return me.timeAxis.step.step;
+      },
       toScreen: bind$2(_context4 = me._toScreen).call(_context4, me),
       toGlobalScreen: bind$2(_context5 = me._toGlobalScreen).call(_context5, me),
       // this refers to the root.width
@@ -54984,6 +54834,7 @@ var timeline = {
       Item: Item,
       BackgroundItem: BackgroundItem,
       BoxItem: BoxItem,
+      ClusterItem: ClusterItem,
       PointItem: PointItem,
       RangeItem: RangeItem
     },
