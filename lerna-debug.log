@@ -1,0 +1,12 @@
+16 error Error: Command failed: git remote update
+16 error fatal: unable to access 'https://github.com/atdow/learn-demo.git/': Could not resolve host: github.com
+16 error error: Could not fetch origin
+16 error
+16 error Fetching origin
+16 error
+16 error     at makeError (E:\note-web\learn-demo\node_modules\_execa@1.0.0@execa\index.js:174:9)
+16 error     at Function.module.exports.sync (E:\note-web\learn-demo\node_modules\_execa@1.0.0@execa\index.js:338:15)
+16 error     at Object.execSync (E:\note-web\learn-demo\node_modules\_@lerna_child-process@3.16.5@@lerna\child-process\index.js:26:16)
+16 error     at updateRemote (E:\note-web\learn-demo\node_modules\_@lerna_version@3.22.1@@lerna\version\lib\is-behind-upstream.js:26:16)
+16 error     at isBehindUpstream (E:\note-web\learn-demo\node_modules\_@lerna_version@3.22.1@@lerna\version\lib\is-behind-upstream.js:11:3)
+16 error     at VersionCommand.initialize (E:\note-web\learn-demo\node_modules\_@lerna_version@3.22.1@@lerna\version\index.js:154:9)
