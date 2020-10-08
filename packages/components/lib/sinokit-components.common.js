@@ -294,7 +294,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 /* harmony default export */ var src = __webpack_exports__["default"] = ({
-  version: '0.2.11',
+  version: '0.2.12',
   install,
   Ellipsis: src_ellipsis
 });
