@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'SSticky',
+  name: "SSticky",
   props: {
     stickyTop: {
       type: Number,
@@ -31,77 +31,78 @@ export default {
     },
     className: {
       type: String,
-      default: '',
+      default: "",
     },
     // 滚动的容器，空则默认为 window
     appendTo: {
       type: String,
-      default: '',
+      default: "",
     },
   },
   data() {
-    this.appendToEl = window
+    this.appendToEl = window;
     return {
       active: false,
-      position: '',
+      position: "",
       width: undefined,
       height: undefined,
       isSticky: false,
-    }
+    };
   },
   mounted() {
-    this.height = this.$el.getBoundingClientRect().height
+    console.log(7777);
+    this.height = this.$el.getBoundingClientRect().height;
     if (this.appendTo) {
-      this.appendToEl = document.querySelector(this.appendTo)
+      this.appendToEl = document.querySelector(this.appendTo);
     }
-    this.appendToEl.addEventListener('scroll', this.handleScroll)
+    this.appendToEl.addEventListener("scroll", this.handleScroll);
 
-    window.addEventListener('resize', this.handleResize)
+    window.addEventListener("resize", this.handleResize);
   },
   activated() {
-    this.handleScroll()
+    this.handleScroll();
   },
   destroyed() {
-    this.appendToEl.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.handleResize)
+    this.appendToEl.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.handleResize);
   },
   methods: {
     sticky() {
       if (this.active) {
-        return
+        return;
       }
-      this.position = 'fixed'
-      this.active = true
-      this.width = this.width + 'px'
-      this.isSticky = true
+      this.position = "fixed";
+      this.active = true;
+      this.width = this.width + "px";
+      this.isSticky = true;
     },
     handleReset() {
       if (!this.active) {
-        return
+        return;
       }
-      this.reset()
+      this.reset();
     },
     reset() {
-      this.position = ''
-      this.width = 'auto'
-      this.active = false
-      this.isSticky = false
+      this.position = "";
+      this.width = "auto";
+      this.active = false;
+      this.isSticky = false;
     },
     handleScroll() {
-      const width = this.$el.getBoundingClientRect().width
-      this.width = width || 'auto'
-      const offsetTop = this.$el.getBoundingClientRect().top
+      const width = this.$el.getBoundingClientRect().width;
+      this.width = width || "auto";
+      const offsetTop = this.$el.getBoundingClientRect().top;
       if (offsetTop < this.stickyTop) {
-        this.sticky()
-        return
+        this.sticky();
+        return;
       }
-      this.handleReset()
+      this.handleReset();
     },
     handleResize() {
       if (this.isSticky) {
-        this.width = this.$el.getBoundingClientRect().width + 'px'
+        this.width = this.$el.getBoundingClientRect().width + "px";
       }
     },
   },
-}
+};
 </script>
