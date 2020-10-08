@@ -1,6 +1,6 @@
 {
   "name": "atdow-vuekit",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
