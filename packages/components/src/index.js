@@ -23,7 +23,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default {
-  version: '0.2.15',
+  version: '0.0.1',
   install,
   Ellipsis
 };

@@ -1,5 +1,5 @@
 {
-  "name": "@atdow-vuekit/components",
+  "name": "atdow-vuekit",
   "version": "0.0.1",
   "description": "组件",
   "keywords": [
@@ -62,5 +62,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.0"
   },
-  "gitHead": "a02fe89d4a8036103ddd3235eaf4446462fc4167"
+  "gitHead": "0ed08bc1dcf02aa6d96fd72ed3d8557b7618ada2"
 }
