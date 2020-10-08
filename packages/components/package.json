@@ -62,5 +62,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^2.5.0"
   },
-  "gitHead": "89a0bccd64d14cbcd69be15ef35b97634bd7769e"
+  "gitHead": "8409413dfbb1144ce74bd955c556d70dfeefc811"
 }
