@@ -326,7 +326,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\n.back-to-ceiling[data-v-3a8f819e] {\n  position: fixed;\n  display: inline-block;\n  text-align: center;\n  cursor: pointer;\n}\n.back-to-ceiling[data-v-3a8f819e]:hover {\n  background: #d5dbe7;\n}\n.fade-enter-active[data-v-3a8f819e],\n.fade-leave-active[data-v-3a8f819e] {\n  transition: opacity 0.5s;\n}\n.fade-enter[data-v-3a8f819e],\n.fade-leave-to[data-v-3a8f819e] {\n  opacity: 0;\n}\n.back-to-ceiling .Icon[data-v-3a8f819e] {\n  fill: #9aaabf;\n  background: none;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "\n.back-to-ceiling[data-v-3a8f819e] {\r\n  position: fixed;\r\n  display: inline-block;\r\n  text-align: center;\r\n  cursor: pointer;\n}\n.back-to-ceiling[data-v-3a8f819e]:hover {\r\n  background: #d5dbe7;\n}\n.fade-enter-active[data-v-3a8f819e],\r\n.fade-leave-active[data-v-3a8f819e] {\r\n  transition: opacity 0.5s;\n}\n.fade-enter[data-v-3a8f819e],\r\n.fade-leave-to[data-v-3a8f819e] {\r\n  opacity: 0;\n}\n.back-to-ceiling .Icon[data-v-3a8f819e] {\r\n  fill: #9aaabf;\r\n  background: none;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 

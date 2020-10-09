@@ -12069,7 +12069,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\n.json-editor[data-v-09ebc5e1] {\n  height: 100%;\n  position: relative;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror {\n  height: auto;\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror-scroll {\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .cm-s-rubyblue span.cm-string {\n  color: #f08047;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "\n.json-editor[data-v-09ebc5e1] {\r\n  height: 100%;\r\n  position: relative;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror {\r\n  height: auto;\r\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .CodeMirror-scroll {\r\n  min-height: 300px;\n}\n.json-editor[data-v-09ebc5e1] .cm-s-rubyblue span.cm-string {\r\n  color: #f08047;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
