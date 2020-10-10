@@ -59,7 +59,7 @@ ComponentNames.forEach(name => {
   installTemplate.push(
     render(INSTALL_COMPONENT_TEMPLATE, {
       name: componentName,
-      component: name
+      // component: name
     })
   );
   listTemplate.push(`  ${componentName}`);

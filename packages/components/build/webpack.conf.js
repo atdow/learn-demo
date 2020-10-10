@@ -2,6 +2,7 @@ const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
 
 const config = require('./config');
 
@@ -12,7 +13,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(process.cwd(), './lib'),
-    publicPath: '/dist/',
+    publicPath: '/lib/',
     filename: 'index.js',
     chunkFilename: '[id].js',
     libraryTarget: 'umd',
@@ -48,38 +49,44 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.(jsx?|babel|es6)$/,
-        include: process.cwd(),
-        exclude: config.jsexclude,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          compilerOptions: {
-            preserveWhitespace: false
-          }
+      test: /\.(jsx?|babel|es6)$/,
+      include: process.cwd(),
+      exclude: config.jsexclude,
+      loader: 'babel-loader'
+    },
+    {
+      test: /\.vue$/,
+      loader: 'vue-loader',
+      options: {
+        compilerOptions: {
+          preserveWhitespace: false
         }
-      },
-      {
-        test: /\.css$/,
-        use: [{
-            loader: 'style-loader' // 将 JS 字符串生成为 style 节点
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              import: true
-            }
-          }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
+    },
+    {
+      test: /\.css$/,
+      use: [{
+        loader: 'style-loader' // 将 JS 字符串生成为 style 节点
+      },
+      {
+        loader: 'css-loader',
+        options: {
+          import: true
+        }
+      }
+      ]
+    },
+    {
+      test: /\.scss$/,
+      loaders: ['style-loader', 'css-loader', 'sass-loader']
+    }
     ]
   },
-  plugins: [new ProgressBarPlugin(), new VueLoaderPlugin()]
+  plugins: [
+    new ProgressBarPlugin(),
+    new VueLoaderPlugin(),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    })
+  ]
 };

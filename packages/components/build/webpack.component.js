@@ -1,6 +1,7 @@
 const path = require('path');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const webpack = require('webpack');
 
 const Components = require('../components.json');
 const config = require('./config');
@@ -9,9 +10,9 @@ const webpackConfig = {
   entry: Components,
   output: {
     path: path.resolve(process.cwd(), './lib'),
-    publicPath: '/dist/',
+    publicPath: '/lib/',
     filename: '[name].js',
-    chunkFilename: '[id].js',
+    chunkFilename: '[name].chunk.js',
     libraryTarget: 'umd'
   },
   resolve: {
@@ -33,57 +34,63 @@ const webpackConfig = {
   },
   module: {
     rules: [{
-        test: /\.(jsx?|babel|es6)$/,
-        include: process.cwd(),
-        exclude: config.jsexclude,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          compilerOptions: {
-            preserveWhitespace: false
-          }
-        }
-      },
-      {
-        test: /\.css$/,
-        use: [{
-            loader: 'style-loader' // 将 JS 字符串生成为 style 节点
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              import: true
-            }
-          }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [{
-            loader: 'style-loader' // 将 JS 字符串生成为 style 节点
-          },
-          {
-            loader: 'css-loader' // 将 CSS 转化成 CommonJS 模块
-          },
-          {
-            loader: 'sass-loader' // 将 Sass 编译成 CSS
-          }
-        ]
-      },
-      {
-        test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 10000,
-          name: path.posix.join('static', '[name].[hash:7].[ext]')
+      test: /\.(jsx?|babel|es6)$/,
+      include: process.cwd(),
+      exclude: config.jsexclude,
+      loader: 'babel-loader'
+    },
+    {
+      test: /\.vue$/,
+      loader: 'vue-loader',
+      options: {
+        compilerOptions: {
+          preserveWhitespace: false
         }
       }
+    },
+    {
+      test: /\.css$/,
+      use: [{
+        loader: 'style-loader' // 将 JS 字符串生成为 style 节点
+      },
+      {
+        loader: 'css-loader',
+        options: {
+          import: true
+        }
+      }
+      ]
+    },
+    {
+      test: /\.scss$/,
+      use: [{
+        loader: 'style-loader' // 将 JS 字符串生成为 style 节点
+      },
+      {
+        loader: 'css-loader' // 将 CSS 转化成 CommonJS 模块
+      },
+      {
+        loader: 'sass-loader' // 将 Sass 编译成 CSS
+      }
+      ]
+    },
+    {
+      test: /\.(svg|otf|ttf|woff2?|eot|gif|png|jpe?g)(\?\S*)?$/,
+      loader: 'url-loader',
+      query: {
+        limit: 10000,
+        name: path.posix.join('static', '[name].[hash:7].[ext]')
+      }
+    }
     ]
   },
-  plugins: [new ProgressBarPlugin(), new VueLoaderPlugin()]
+  plugins: [
+    new ProgressBarPlugin(),
+    new VueLoaderPlugin(),
+    new webpack.optimize.LimitChunkCountPlugin({
+      maxChunks: 1
+    })
+  ]
 };
 
 module.exports = webpackConfig;
